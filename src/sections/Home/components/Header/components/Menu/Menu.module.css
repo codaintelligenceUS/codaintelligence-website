@@ -12,6 +12,7 @@
 .navItem {
   --background: 0 100% 0% 0;
   color: white;
+  font-size: 14px;
 }
 
 /* Main menu container */

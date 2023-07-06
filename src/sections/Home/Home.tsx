@@ -1,3 +1,4 @@
+import { Footer } from "../Footer/Footer";
 import { API } from "./components/API/API";
 import { BookDemo } from "./components/BookDemo/BookDemo";
 import { Header } from "./components/Header/Header";
@@ -12,6 +13,7 @@ export function Home() {
       <SOC />
       <API />
       <BookDemo />
+      <Footer />
     </>
   );
 }

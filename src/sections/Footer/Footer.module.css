@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  background-color: #0f153c;
+  gap: 30px;
+  padding: 30px;
+}
+
+.container > svg {
+  width: 130px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkGroup:last-child {
+  margin-left: auto;
+}
+
+.linkGroup h1 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.linkGroup a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

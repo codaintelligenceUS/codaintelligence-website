@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 150px;
+}
+
+.container h1 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.container footer {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #333;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.name {
+}

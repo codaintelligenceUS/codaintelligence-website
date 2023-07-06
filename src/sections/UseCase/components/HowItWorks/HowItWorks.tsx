@@ -1,6 +1,5 @@
 import { Title } from "@/atoms/Title/Title";
 import styles from "./HowItWorks.module.css";
-import { Server } from "lucide-react";
 import { IllustrationBox } from "@/atoms/IllustrationBox/IllustrationBox";
 
 export function HowItWorks() {

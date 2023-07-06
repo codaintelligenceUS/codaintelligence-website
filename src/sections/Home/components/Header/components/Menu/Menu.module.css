@@ -1,0 +1,9 @@
+/* Card modal styles */
+.cardModalBackground {
+  background: linear-gradient(180deg, #db4e66 0%, #a24688 39.57%, #4e3aba 100%);
+  color: white;
+}
+.cardModalBackground p {
+  color: white;
+  opacity: 0.5;
+}

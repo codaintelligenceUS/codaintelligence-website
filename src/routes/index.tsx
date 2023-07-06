@@ -1,9 +1,5 @@
-import { Button } from "../atoms";
+import Home from "./Home";
 
 export function MainRouter() {
-  return (
-    <>
-      <Button>Hello</Button>
-    </>
-  );
+  return <Home />;
 }

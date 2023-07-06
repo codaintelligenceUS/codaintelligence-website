@@ -12,6 +12,10 @@
   align-items: flex-start;
 }
 
+.dark {
+  color: #333;
+}
+
 .container h3 {
   color: #ec1c5b;
 
@@ -25,7 +29,7 @@
 }
 
 .container h1 {
-  color: #fff;
+  color: currentColor;
   overflow: hidden;
   text-overflow: ellipsis;
 
@@ -38,7 +42,7 @@
 }
 
 .container h2 {
-  color: #fff;
+  color: currentColor;
   font-family: Inter;
   font-size: 21px;
   font-style: normal;

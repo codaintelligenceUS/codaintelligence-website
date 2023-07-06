@@ -9,12 +9,14 @@ type TitleProps = {
   category?: string;
   /** Whether text should be left aligned */
   isLeftAligned?: boolean;
+  /** Whether to apply dark color to text */
+  isDark?: boolean;
 };
 
 export function Title(props: TitleProps) {
   return (
     <div
-      className={`${styles.container} ${props.isLeftAligned ? styles.leftAligned : ""
+      className={`${styles.container} ${props.isDark ? styles.dark : ""} ${props.isLeftAligned ? styles.leftAligned : ""
         }`}
     >
       {props.category && <h3>{props.category}</h3>}

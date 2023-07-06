@@ -1,5 +1,5 @@
-import { UseCase } from "./UseCase";
+import Home from "./Home";
 
 export function MainRouter() {
-  return <UseCase />;
+  return <Home />;
 }

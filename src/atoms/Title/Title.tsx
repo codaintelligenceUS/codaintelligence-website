@@ -1,6 +1,6 @@
 import styles from "./Title.module.css";
 
-type TitleProps = {
+export type TitleProps = {
   /** Main title text */
   title?: string;
   /** Subtittle text */

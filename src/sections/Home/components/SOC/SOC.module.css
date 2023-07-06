@@ -19,7 +19,7 @@
 
 .reports img {
   position: absolute;
-  margin-left: -90px;
+  margin-left: 0px;
 }
 
 .reports img:last-child {
@@ -30,7 +30,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin: 30px 0;
+  margin: 30px 0 0 30px;
 }
 
 .reportInfo {

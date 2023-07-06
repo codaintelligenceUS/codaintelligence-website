@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  margin: 10px auto;
+  max-width: 800px;
+}
+.reversed {
+  flex-direction: row-reverse;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title h1 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.box {
+  margin: 10px;
+}

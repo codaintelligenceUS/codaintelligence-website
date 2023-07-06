@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20vh 5vw;
+  position: relative;
+}
+
+.flare {
+  position: absolute;
+  z-index: 0;
+}
+
+.container h1 {
+  color: #d8d8d8;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 71px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.container > *:not(img) {
+  position: relative;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.text p {
+  opacity: 0.5;
+  max-width: 600px;
+  text-align: center;
+  margin: 15px auto auto auto;
+}
+
+.subtitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1.you {
+  text-align: center;
+  font-family: Manrope;
+  font-size: 71px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-left: 10px;
+  background-color: #ec1c5b;
+  background-image: linear-gradient(45deg, #ec1c5b, #e1c7d1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.swooshes {
+  position: absolute;
+  bottom: -11px;
+  margin-left: 440px;
+}
+
+.screenshot {
+  margin-top: 100px;
+  max-width: 800px;
+}

@@ -33,6 +33,18 @@ export function Menu() {
             },
           ]}
         />
+        <NavigationEntry
+          title="Partners"
+          links={[
+            {
+              title: "Technology Partners",
+              href: "/partners",
+              description: "Technology Partners",
+            },
+          ]}
+        />
+        <NavigationEntry title="Guide" href="/guide" />
+        <NavigationEntry title="Company" href="/company" />
       </NavigationMenuList>
     </NavigationMenu>
   );

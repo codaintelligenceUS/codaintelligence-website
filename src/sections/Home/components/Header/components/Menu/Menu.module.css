@@ -7,3 +7,9 @@
   color: white;
   opacity: 0.5;
 }
+
+/* Navigation item overrides */
+.navItem {
+  --background: 0 100% 0% 0;
+  color: white;
+}

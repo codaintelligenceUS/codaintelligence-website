@@ -3,8 +3,20 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { NavigationEntry } from "./NavigationEntry";
+import styles from "./Menu.module.css";
+import { DemoButton, Logo } from "@/atoms";
 
 export function Menu() {
+  return (
+    <div className={styles.container}>
+      <LeftOptions />
+      <Logo />
+      <RightOptions />
+    </div>
+  );
+}
+
+function LeftOptions() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -45,6 +57,20 @@ export function Menu() {
         />
         <NavigationEntry title="Guide" href="/guide" />
         <NavigationEntry title="Company" href="/company" />
+      </NavigationMenuList>
+    </NavigationMenu>
+  );
+}
+
+function RightOptions() {
+  return (
+    <NavigationMenu>
+      <NavigationMenuList>
+        <NavigationEntry
+          title="Partner Login"
+          href="https://support.codaintelligence.com"
+        />
+        <DemoButton />
       </NavigationMenuList>
     </NavigationMenu>
   );

@@ -13,3 +13,14 @@
   --background: 0 100% 0% 0;
   color: white;
 }
+
+/* Main menu container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 45px;
+
+  > svg {
+    height: 45px;
+  }
+}

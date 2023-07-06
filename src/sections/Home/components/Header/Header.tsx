@@ -7,7 +7,6 @@ import { Menu } from "./components/Menu/Menu";
 export function Header() {
   return (
     <section className={styles.section}>
-      hell
       <Menu />
     </section>
   );

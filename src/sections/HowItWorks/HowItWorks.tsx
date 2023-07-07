@@ -2,9 +2,17 @@ import { Title } from "@/atoms/Title/Title";
 import styles from "./HowItWorks.module.css";
 import { IllustrationBox } from "@/atoms/IllustrationBox/IllustrationBox";
 
-export function HowItWorks() {
+export type HowItWorksProps = {
+  isPinkEndingGradient?: boolean;
+};
+
+export function HowItWorks(props: HowItWorksProps) {
   return (
-    <section className={styles.container}>
+    <section
+      className={`${styles.container} ${
+        props.isPinkEndingGradient ? styles.pinkEndingGradient : ""
+      }`}
+    >
       <Title
         category="How It Works"
         title="Continuous. Autonomous. Actionable."

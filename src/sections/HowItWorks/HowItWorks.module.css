@@ -2,3 +2,7 @@
   background: linear-gradient(to bottom, #161831 0%, #030817 80%, #303399 100%);
   padding: 100px 0;
 }
+
+.container.pinkEndingGradient {
+  background: linear-gradient(to bottom, #161831 0%, #030817 80%, #570e2f 100%);
+}

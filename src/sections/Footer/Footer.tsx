@@ -1,6 +1,8 @@
 import { Logo } from "@/atoms";
 import styles from "./Footer.module.css";
 import { Mail, Phone, Pin } from "lucide-react";
+import { PAGES } from "@/routes";
+import { Link } from "wouter";
 
 export function Footer() {
   return (
@@ -8,25 +10,28 @@ export function Footer() {
       <Logo />
       <LinkGroup
         title="Company"
-        links={[
-          { title: "About us", href: "#" },
-          { title: "Careers", href: "#" },
-        ]}
+        links={[{ title: "About us", href: PAGES.company }]}
       />
       <LinkGroup
         title="Platform"
         links={[
-          { title: "Footprint", href: "#" },
-          { title: "How it works", href: "#" },
-          { title: "Footprint for Partners", href: "#" },
+          {
+            title: "Full Attack Surface Visibility",
+            href: PAGES.fullAttackSurface,
+          },
+          {
+            title: "Contextual Prioritization",
+            href: PAGES.contextualPrioritization,
+          },
+          {
+            title: "Effective Remediation",
+            href: PAGES.effectiveRemediation,
+          },
         ]}
       />
       <LinkGroup
         title="Partners"
-        links={[
-          { title: "Technology Partners", href: "#" },
-          { title: "Managed Service Providers", href: "#" },
-        ]}
+        links={[{ title: "Technology Partners", href: PAGES.partners }]}
       />
       <LinkGroup
         title="Get in touch"
@@ -36,8 +41,16 @@ export function Footer() {
             href: "#",
             icon: <Pin />,
           },
-          { title: "sales@codaintelligence.com", href: "#", icon: <Mail /> },
-          { title: "+1 (617) 963-0147", href: "#", icon: <Phone /> },
+          {
+            title: "sales@codaintelligence.com",
+            href: "mailto:sales@codaintelligence.com",
+            icon: <Mail />,
+          },
+          {
+            title: "+1 (617) 963-0147",
+            href: "callto:+1 (617) 963-0147",
+            icon: <Phone />,
+          },
         ]}
       />
     </section>
@@ -54,10 +67,10 @@ function LinkGroup(props: LinkGroupProps) {
     <div className={styles.linkGroup}>
       <h1>{props.title}</h1>
       {props.links.map((link) => (
-        <a href={link.href}>
+        <Link href={link.href}>
           {link.icon}
           {link.title}
-        </a>
+        </Link>
       ))}
     </div>
   );

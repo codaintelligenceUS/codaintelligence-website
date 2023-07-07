@@ -19,6 +19,20 @@
   color: #333;
 }
 
+.link {
+  color: #333;
+}
+
+.link h1 {
+  color: #333;
+  font-weight: 700;
+}
+
+.link p {
+  color: #333;
+  opacity: 0.5;
+}
+
 /* Main menu container */
 .container {
   display: flex;

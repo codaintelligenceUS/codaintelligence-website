@@ -5,12 +5,16 @@ import {
 import { NavigationEntry } from "./NavigationEntry";
 import styles from "./Menu.module.css";
 import { DemoButton, Logo } from "@/atoms";
+import { PAGES } from "@/routes";
+import { Link } from "wouter";
 
 export function Menu() {
   return (
     <div className={styles.container}>
       <LeftOptions />
-      <Logo />
+      <Link to={PAGES.home}>
+        <Logo />
+      </Link>
       <RightOptions />
     </div>
   );
@@ -26,37 +30,37 @@ function LeftOptions() {
           cardDescription="Specifically built for exploit mitigation"
           links={[
             {
-              title: "Use Case 1",
-              href: "/usc1",
+              title: "Full Attack Surface Visibility",
+              href: PAGES.fullAttackSurface,
               description:
-                "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Leverage our ASM capabilities to bring confidence in your process",
             },
             {
-              title: "Use Case 2",
-              href: "/usc2",
-              description:
-                "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",
+              title: "Contextual Prioritization",
+              href: PAGES.contextualPrioritization,
+              description: "Identify & remediate exploitable vectors quickly",
             },
             {
-              title: "Use Case 3",
-              href: "/usc3",
+              title: "Effective Remediation",
+              href: PAGES.effectiveRemediation,
               description:
-                "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Leverage our AI capabilities to foster collaboration",
             },
           ]}
         />
         <NavigationEntry
           title="Partners"
-          links={[
-            {
-              title: "Technology Partners",
-              href: "/partners",
-              description: "Technology Partners",
-            },
-          ]}
+          href={PAGES.partners}
+          // links={[
+          //   {
+          //     title: "Technology Partners",
+          //     href: "/partners",
+          //     description: "Technology Partners",
+          //   },
+          // ]}
         />
-        <NavigationEntry title="Guide" href="/guide" />
-        <NavigationEntry title="Company" href="/company" />
+        <NavigationEntry title="Guide" href={PAGES.resources} />
+        <NavigationEntry title="Company" href={PAGES.company} />
       </NavigationMenuList>
     </NavigationMenu>
   );

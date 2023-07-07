@@ -1,6 +1,3 @@
-import * as React from "react";
-
-import { cn } from "@/lib/utils";
 import {
   NavigationMenuContent,
   NavigationMenuItem,
@@ -10,6 +7,7 @@ import {
 } from "@/components/ui/navigation-menu";
 
 import styles from "./Menu.module.css";
+import { Link } from "wouter";
 
 type EntryLink = { title: string; href: string; description: string };
 
@@ -42,7 +40,11 @@ export function NavigationEntry(props: NavigationEntryProps) {
       <NavigationMenuItem
         className={`${styles.navItem} ${navigationMenuTriggerStyle()}`}
       >
-        <NavigationMenuLink href={props.href}>{props.title}</NavigationMenuLink>
+        <Link to={props.href}>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            {props.title}
+          </NavigationMenuLink>
+        </Link>
       </NavigationMenuItem>
     );
   }
@@ -61,9 +63,17 @@ export function NavigationEntry(props: NavigationEntryProps) {
             />
           )}
           {props.links.map((link) => (
-            <ListItem key={link.href} title={link.title} href={link.href}>
-              {link.description}
-            </ListItem>
+            <li key={link.title}>
+              <NavigationMenuLink asChild>
+                <Link
+                  href={link.href}
+                  className={`${styles.link} block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground`}
+                >
+                  <h1>{link.title}</h1>
+                  <p>{link.description}</p>
+                </Link>
+              </NavigationMenuLink>
+            </li>
           ))}
         </ul>
       </NavigationMenuContent>
@@ -87,32 +97,3 @@ function CardItem(props: Pick<ModalProps, "cardTitle" | "cardDescription">) {
     </li>
   );
 }
-
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <h1
-            className={`${styles.navItemTitle} text-sm font-medium leiding-none`}
-          >
-            {title}
-          </h1>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  );
-});

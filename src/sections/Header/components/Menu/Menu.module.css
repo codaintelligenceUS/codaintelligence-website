@@ -15,6 +15,10 @@
   font-size: 14px;
 }
 
+.navItemTitle {
+  color: #333;
+}
+
 /* Main menu container */
 .container {
   display: flex;

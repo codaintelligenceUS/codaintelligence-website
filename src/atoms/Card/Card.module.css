@@ -62,15 +62,15 @@
   padding: 20px;
 }
 
-li,
-ul {
+.card li,
+.card ul {
   color: #333;
 }
 
-ul {
+.card ul {
   list-style-type: disc;
 }
 
-li {
+.card li {
   margin-left: 20px;
 }

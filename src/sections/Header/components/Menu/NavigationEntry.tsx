@@ -103,7 +103,11 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
+          <h1
+            className={`${styles.navItemTitle} text-sm font-medium leiding-none`}
+          >
+            {title}
+          </h1>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>

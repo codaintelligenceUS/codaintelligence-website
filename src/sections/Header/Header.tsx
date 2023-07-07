@@ -11,11 +11,12 @@ type CompanyHeaderProps = { type: "company" };
 type PartnerHeaderProps = { type: "partner" };
 type UseCaseHeaderProps = { type: "usecase" } & PhotoTitleProps;
 
-export type HeaderProps =
+export type HeaderProps = (
   | HomepageHeaderProps
   | CompanyHeaderProps
   | PartnerHeaderProps
-  | UseCaseHeaderProps;
+  | UseCaseHeaderProps
+) & { isBlueBottomGradient?: boolean };
 
 /**
  * Header section of the main homepage
@@ -29,7 +30,11 @@ export function Header(props: HeaderProps) {
   };
 
   return (
-    <section className={styles.section}>
+    <section
+      className={`${styles.section} ${
+        props.isBlueBottomGradient ? styles.blueBottomGradient : ""
+      }`}
+    >
       <Menu />
       {content[props.type]}
     </section>

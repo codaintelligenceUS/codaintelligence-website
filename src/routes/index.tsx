@@ -1,5 +1,8 @@
 import { Home } from "./Home";
+import { ContextualPrioritization } from "./useCases/ContextualPrioritization";
+import { EffectiveRemediation } from "./useCases/EffectiveRemediation";
+import { FullAttackSurface } from "./useCases/FullAttackSurface";
 
 export function MainRouter() {
-  return <Home />;
+  return <EffectiveRemediation />;
 }

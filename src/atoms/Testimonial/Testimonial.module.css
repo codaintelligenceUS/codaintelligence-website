@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 150px;
+  padding: 10vh 20vw;
 }
 
 .container h1 {
@@ -11,6 +11,10 @@
   font-style: italic;
   font-weight: 200;
   line-height: normal;
+}
+
+.container img {
+  max-height: 50px;
 }
 
 .container footer {

@@ -3,9 +3,9 @@ export type CardProps = {
   /** Optional icon */
   icon?: JSX.Element;
   /** Card title */
-  title: string;
+  title?: string;
   /** Card content */
-  content: string | JSX.Element;
+  content?: string | JSX.Element;
   /** Header photo URL */
   headerPhoto?: string;
 };
@@ -18,12 +18,13 @@ export function Card(props: CardProps) {
       )}
       <div className={styles.content}>
         {props.icon}
-        <h1>{props.title}</h1>
-        {typeof props.content === "string" ? (
-          <p>{props.content}</p>
-        ) : (
-          props.content
-        )}
+        {props.title && <h1>{props.title}</h1>}
+        {props.content &&
+          (typeof props.content === "string" ? (
+            <p>{props.content}</p>
+          ) : (
+            props.content
+          ))}
       </div>
     </div>
   );

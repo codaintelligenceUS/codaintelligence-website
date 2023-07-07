@@ -1,27 +1,37 @@
 import { DemoButton } from "@/atoms";
 import styles from "./FeatureTitle.module.css";
 import Flare from "./Flare.png";
-import Screenshot from "./Screenshot.png";
+import ScreenshotImage from "./Screenshot.png";
+import Video from "./IntroMovie.mp4";
 
 export function FeatureTitle() {
   return (
     <div className={styles.container}>
       <img src={Flare} alt="Flare" className={styles.flare} />
       <div className={styles.text}>
-        <h1>Attack surface management</h1>
+        <h1>Attack surface management designed for</h1>
         <div className={styles.subtitle}>
-          <h1>designed for</h1>
-          <h1 className={styles.you}>you</h1>
+          <h1 className={styles.you}>your resilience</h1>
           <Swooshes />
         </div>
         <p>
-          No one is paying attention all the time. Filter out the noise and
-          focus on what really matters. Our leading exploit mitigation system
-          helps you keep your services running 24/7.
+          No one can fix everything that should be. Most of the time, the things
+          that get fixed were not exploitable in the first place. Filter out the
+          noise and focus on what really matters. Our leading exploit mitigation
+          system helps you keep your services running 24/7.{" "}
         </p>
       </div>
       <DemoButton isLarge />
-      <img src={Screenshot} alt="Screenshot" className={styles.screenshot} />
+      <Screenshot />
+    </div>
+  );
+}
+
+function Screenshot() {
+  return (
+    <div className={styles.screenshot}>
+      <video src={Video} controls />
+      <img src={ScreenshotImage} alt="Screenshot" />
     </div>
   );
 }

@@ -11,17 +11,21 @@ export type TitleProps = {
   isLeftAligned?: boolean;
   /** Whether to apply dark color to text */
   isDark?: boolean;
+  /** Optional children to display */
+  children?: React.ReactNode;
 };
 
 export function Title(props: TitleProps) {
   return (
     <div
-      className={`${styles.container} ${props.isDark ? styles.dark : ""} ${props.isLeftAligned ? styles.leftAligned : ""
-        }`}
+      className={`${styles.container} ${props.isDark ? styles.dark : ""} ${
+        props.isLeftAligned ? styles.leftAligned : ""
+      }`}
     >
       {props.category && <h3>{props.category}</h3>}
       {props.title && <h1>{props.title}</h1>}
       {props.subtitle && <h2>{props.subtitle}</h2>}
+      {props.children}
     </div>
   );
 }

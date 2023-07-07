@@ -27,6 +27,7 @@
   line-height: 120.6%;
   letter-spacing: 12.6px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .container h1 {
@@ -51,4 +52,8 @@
   line-height: normal;
   opacity: 0.8;
   max-width: 700px;
+}
+
+.container h2:not(:last-child) {
+  margin-bottom: 20px;
 }

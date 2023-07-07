@@ -19,8 +19,6 @@ export function FullAttackSurface() {
         category="visibility"
         title="Full Attack Surface Visibility"
         subtitle="Leverage our Attack Surface Management (ASM) capabilities to gain unparalleled visibility into your organization's security posture and ensure compliance requirements are always met."
-        isLeftAligned
-        children={<DemoButton isLarge />}
         sideChildren={
           <Card
             title="Learn More"
@@ -28,7 +26,9 @@ export function FullAttackSurface() {
             headerPhoto="https://picsum.photos/200/300"
           />
         }
-      />
+      >
+        <DemoButton isLarge />
+      </Header>
       <CardsTitle
         fixedHeight
         title={{

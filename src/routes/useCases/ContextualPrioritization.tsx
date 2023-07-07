@@ -16,7 +16,7 @@ export function ContextualPrioritization() {
     <>
       <Header
         isBlueBottomGradient
-        type="usecase"
+        type="titleWithPhoto"
         category="Prioritization"
         title="Contextual Prioritization"
         subtitle="Identify & remediate exploitable attack vectors by correlating application-level exploits with infrastructure misconfigurations across your entire attack surface"

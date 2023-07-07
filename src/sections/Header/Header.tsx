@@ -7,16 +7,11 @@ import {
 } from "./components/PhotoTitle/PhotoTitle";
 
 type HomepageHeaderProps = { type: "homepage" };
-type CompanyHeaderProps = { type: "company" };
-type PartnerHeaderProps = { type: "partner" };
-type UseCaseHeaderProps = { type: "usecase" } & PhotoTitleProps;
+type TitleWithPhotoHeaderProps = { type: "titleWithPhoto" } & PhotoTitleProps;
 
-export type HeaderProps = (
-  | HomepageHeaderProps
-  | CompanyHeaderProps
-  | PartnerHeaderProps
-  | UseCaseHeaderProps
-) & { isBlueBottomGradient?: boolean };
+export type HeaderProps = (HomepageHeaderProps | TitleWithPhotoHeaderProps) & {
+  isBlueBottomGradient?: boolean;
+};
 
 /**
  * Header section of the main homepage
@@ -24,9 +19,7 @@ export type HeaderProps = (
 export function Header(props: HeaderProps) {
   const content: { [key in HeaderProps["type"]]: JSX.Element } = {
     homepage: <FeatureTitle />,
-    company: <></>,
-    partner: <></>,
-    usecase: <PhotoTitle {...(props as UseCaseHeaderProps)} />,
+    titleWithPhoto: <PhotoTitle {...(props as TitleWithPhotoHeaderProps)} />,
   };
 
   return (

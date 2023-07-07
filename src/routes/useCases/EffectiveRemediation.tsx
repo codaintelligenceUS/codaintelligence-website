@@ -14,7 +14,7 @@ export function EffectiveRemediation() {
   return (
     <>
       <Header
-        type="usecase"
+        type="titleWithPhoto"
         category="Remediation"
         title="Effective Remediation"
         subtitle="Leverage our AI-assisted collaborative remediation workflows to foster collaboration between cross-functional teams with automated progress tracking, notifications & reporting."

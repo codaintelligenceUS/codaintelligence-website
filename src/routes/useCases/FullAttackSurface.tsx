@@ -15,7 +15,7 @@ export function FullAttackSurface() {
   return (
     <>
       <Header
-        type="usecase"
+        type="titleWithPhoto"
         category="visibility"
         title="Full Attack Surface Visibility"
         subtitle="Leverage our Attack Surface Management (ASM) capabilities to gain unparalleled visibility into your organization's security posture and ensure compliance requirements are always met."

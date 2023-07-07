@@ -6,7 +6,7 @@ export type PhotoTitleProps = TitleProps & { sideChildren: JSX.Element };
 export function PhotoTitle(props: PhotoTitleProps) {
   return (
     <div className={styles.container}>
-      <Title {...props} />
+      <Title isLeftAligned {...props} />
       {props.sideChildren}
     </div>
   );

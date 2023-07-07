@@ -1,0 +1,28 @@
+.container {
+  background: linear-gradient(
+    #181831 0%,
+    rgba(255, 255, 255, 1) 25%,
+    rgba(255, 255, 255, 1) 75%,
+    #171831 100%
+  );
+  display: flex;
+  flex-direction: column;
+  padding: 80px 30px;
+}
+
+.white {
+  background: white;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.list img {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}

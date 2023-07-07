@@ -6,5 +6,5 @@ import { EffectiveRemediation } from "./useCases/EffectiveRemediation";
 import { FullAttackSurface } from "./useCases/FullAttackSurface";
 
 export function MainRouter() {
-  return <Company />;
+  return <Home />;
 }

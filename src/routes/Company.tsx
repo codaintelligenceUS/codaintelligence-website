@@ -1,4 +1,4 @@
-import { Header, Mission, Career, Footer } from "@/sections";
+import { Header, Mission, Career, Footer, AsSeenOn } from "@/sections";
 
 export function Company() {
   return (
@@ -10,6 +10,7 @@ export function Company() {
         subtitle="Our vision is to make cyber security available for everyone and embed it into our society's DNA as physical security should be. To achieve our vision, CODA's cyber security products must be Accessible, Affordable and Actionable."
       />
       <Mission />
+      <AsSeenOn />
       <Career />
       <Footer />
     </>

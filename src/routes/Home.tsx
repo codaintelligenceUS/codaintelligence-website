@@ -6,6 +6,7 @@ export function Home() {
       <sections.Header type="homepage" />
       <sections.USP />
       <sections.SOC />
+      <sections.AsSeenOn isWhite />
       <sections.API />
       <sections.BookDemo />
       <sections.Footer />

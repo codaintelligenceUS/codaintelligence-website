@@ -1,5 +1,14 @@
-import * as sections from "../sections";
+import * as sections from "@/sections";
 
-export default function Home() {
-  return <sections.Home />;
+export function Home() {
+  return (
+    <>
+      <sections.Header type="homepage" />
+      <sections.USP />
+      <sections.SOC />
+      <sections.API />
+      <sections.BookDemo />
+      <sections.Footer />
+    </>
+  );
 }

@@ -41,6 +41,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  max-width: 900px;
 }
 
 .container h2 {

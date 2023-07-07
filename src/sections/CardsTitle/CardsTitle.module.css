@@ -2,12 +2,15 @@
   background: linear-gradient(to bottom, #570e2f 0%, #ec1c5b 80%, #161831 100%);
   padding-bottom: 100px;
 }
+.dark {
+  background: linear-gradient(to bottom, #1b2061 0%, #0c0f2d 80%, #0f153c 100%);
+}
 
 .cards {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   margin: 10vw 20vw;
 }
 
@@ -16,7 +19,17 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.largeGrid.fixedHeight .cards {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .fixedHeight .cards > * {
   max-width: none;
   height: 100%;
+}
+
+@media screen and (max-width: 1700px) {
+  .cards {
+    margin: 10vw;
+  }
 }

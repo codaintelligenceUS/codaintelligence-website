@@ -7,6 +7,9 @@ type CardsTitleProps = {
   cards: CardProps[];
   /** Whether to ensure same height for all cards */
   fixedHeight?: boolean;
+  isDark?: boolean;
+  /** Whether to show more items on a row */
+  isLargeGrid?: boolean;
 };
 
 export function CardsTitle(props: CardsTitleProps) {
@@ -14,6 +17,8 @@ export function CardsTitle(props: CardsTitleProps) {
     <section
       className={`${styles.container} ${
         props.fixedHeight ? styles.fixedHeight : ""
+      } ${props.isDark ? styles.dark : ""} ${
+        props.isLargeGrid ? styles.largeGrid : ""
       }`}
     >
       <Title {...props.title} />

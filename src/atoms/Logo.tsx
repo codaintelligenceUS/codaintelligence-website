@@ -2,6 +2,7 @@
 interface CommonProps {
   /** Whether to display logo as fully white or white with primary color */
   isWhite?: boolean;
+  height?: number;
 }
 
 /** Extra options for the container logic */
@@ -46,7 +47,7 @@ function LogoBadge(props: CommonProps) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="60"
-      height="86"
+      height={props.height || 86}
       viewBox="0 0 60 86"
       fill="none"
     >

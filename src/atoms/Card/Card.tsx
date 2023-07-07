@@ -6,13 +6,21 @@ export type CardProps = {
   title?: string;
   /** Card content */
   content?: string | JSX.Element;
+  /** Optional footer component */
+  footer?: string | JSX.Element;
   /** Header photo URL */
   headerPhoto?: string;
+  /** Whether to ensure same size for header photo */
+  fixedHeaderPhoto?: boolean;
 };
 
 export function Card(props: CardProps) {
   return (
-    <div className={styles.card}>
+    <div
+      className={`${styles.card} ${
+        props.fixedHeaderPhoto ? styles.fixedHeaderPhoto : ""
+      }`}
+    >
       {props.headerPhoto && (
         <img src={props.headerPhoto} alt="" className={styles.headerPhoto} />
       )}
@@ -26,6 +34,7 @@ export function Card(props: CardProps) {
             props.content
           ))}
       </div>
+      {props.footer && <div className={styles.footer}>{props.footer}</div>}
     </div>
   );
 }

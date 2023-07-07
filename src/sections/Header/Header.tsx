@@ -1,13 +1,15 @@
-import { TitleProps } from "@/atoms/Title/Title";
 import styles from "./Header.module.css";
 import { FeatureTitle } from "./components/FeatureTitle/FeatureTitle";
 import { Menu } from "./components/Menu/Menu";
-import { PhotoTitle } from "./components/PhotoTitle/PhotoTitle";
+import {
+  PhotoTitle,
+  PhotoTitleProps,
+} from "./components/PhotoTitle/PhotoTitle";
 
 type HomepageHeaderProps = { type: "homepage" };
 type CompanyHeaderProps = { type: "company" };
 type PartnerHeaderProps = { type: "partner" };
-type UseCaseHeaderProps = { type: "usecase" } & TitleProps;
+type UseCaseHeaderProps = { type: "usecase" } & PhotoTitleProps;
 
 export type HeaderProps =
   | HomepageHeaderProps

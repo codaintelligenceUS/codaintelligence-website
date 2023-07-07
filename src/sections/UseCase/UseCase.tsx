@@ -2,6 +2,7 @@ import { Footer } from "../Footer/Footer";
 import { Header } from "../Header/Header";
 import { Feedback } from "./components/Feedback/Feedback";
 import { HowItWorks } from "./components/HowItWorks/HowItWorks";
+import { Report } from "./components/Report/Report";
 import { Why } from "./components/Why/Why";
 
 export function UseCase() {
@@ -17,6 +18,7 @@ export function UseCase() {
       <Why />
       <HowItWorks />
       <Feedback />
+      <Report />
       <Footer />
     </>
   );

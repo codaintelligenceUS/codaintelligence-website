@@ -1,0 +1,14 @@
+.container {
+  background: linear-gradient(180deg, #1e226c 0.99%, #0f153c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.container img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-right: 50px;
+}

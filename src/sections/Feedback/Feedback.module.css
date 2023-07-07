@@ -1,3 +1,6 @@
 .container {
   background: linear-gradient(to bottom, #303399 0%, #1a1f60 100%);
 }
+.container.darkBlue {
+  background: linear-gradient(to bottom, #171831 0%, #1a1f5f 100%);
+}

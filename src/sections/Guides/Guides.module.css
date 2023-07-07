@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 100px;
+  gap: 15px;
+}
+
+.list {
+  padding: 0 100px 100px 100px;
+  gap: 20px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.list > * {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

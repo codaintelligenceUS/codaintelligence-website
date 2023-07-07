@@ -11,6 +11,7 @@ import { USP } from "./USP/USP";
 import { CardsTitle } from "./CardsTitle/CardsTitle";
 import { Career } from "./Career/Career";
 import { AsSeenOn } from "./AsSeenOn/AsSeenOn";
+import { Guides } from "./Guides/Guides";
 
 export {
   API,
@@ -26,4 +27,5 @@ export {
   CardsTitle,
   Career,
   AsSeenOn,
+  Guides,
 };

@@ -1,0 +1,17 @@
+.container {
+  background: linear-gradient(to bottom, #570e2f 0%, #ec1c5b 80%, #161831 100%);
+  padding: 20vh 20vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.container svg {
+  height: 200px;
+  width: 200px;
+}
+.container h1 {
+  font-size: 21px;
+}

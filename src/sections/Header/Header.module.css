@@ -4,6 +4,10 @@
   background: linear-gradient(to bottom, #0f153f 0%, #010415 80%, #570e2f 100%);
 }
 
+.contentPadding {
+  padding: 20vh 0;
+}
+
 .section.blueBottomGradient {
   background: linear-gradient(to bottom, #0f153f 0%, #010415 80%, #161831 100%);
 }

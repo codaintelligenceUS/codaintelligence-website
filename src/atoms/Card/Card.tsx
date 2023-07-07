@@ -1,5 +1,5 @@
 import styles from "./Card.module.css";
-type CardProps = {
+export type CardProps = {
   /** Optional icon */
   icon?: JSX.Element;
   /** Card title */

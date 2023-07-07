@@ -7,7 +7,7 @@ import { HowItWorks } from "./HowItWorks/HowItWorks";
 import { Report } from "./Report/Report";
 import { SOC } from "./SOC/SOC";
 import { USP } from "./USP/USP";
-import { Why } from "./Why/Why";
+import { CardsTitle } from "./CardsTitle/CardsTitle";
 
 export {
   API,
@@ -19,5 +19,5 @@ export {
   Report,
   SOC,
   USP,
-  Why,
+  CardsTitle,
 };

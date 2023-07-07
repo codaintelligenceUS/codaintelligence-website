@@ -9,8 +9,8 @@ export function API() {
       <Title
         isDark
         isLeftAligned
-        title="Need more ? Extend with our API!"
-        subtitle="Footprint provides an extensive REST API and SDKs for the most popular languages!"
+        title="Already struggling with a complex stack and operational fatigue ?"
+        subtitle="Footprint provides an extensive REST API and SDKs for the most popular languages, so the possibilities are endless to integrate our data in your existing processes!"
       />
       <img src={Lock} alt="lock" />
     </section>

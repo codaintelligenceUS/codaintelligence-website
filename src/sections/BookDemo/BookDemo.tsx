@@ -5,8 +5,8 @@ export function BookDemo() {
   return (
     <section className={styles.container}>
       <Title
-        title="Why don’t you take it for a spin ?"
-        subtitle="Book a demo with us by using the button below"
+        title="Let us show you the power of Footprint."
+        subtitle="Book a demo with us by using the button below."
       />
       <DemoButton isLarge />
     </section>

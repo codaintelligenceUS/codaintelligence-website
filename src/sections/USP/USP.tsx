@@ -14,7 +14,7 @@ export function USP() {
         <Title
           isLeftAligned
           title="Take control."
-          subtitle="Our state of the art AI-powered vulnerability management system helps you sort out the important actions from the noise"
+          subtitle="Our state-of-the art, AI-powered attack surface management platform helps you sort out the important remediations needed in order to avoid exploits on your systems and cancel all the noise. "
         />
         <div className={styles.uspList}>
           <UspItem type="identify" />
@@ -35,21 +35,21 @@ function UspItem(props: { type: "identify" | "actions" | "prioritize" }) {
     };
   } = {
     identify: {
-      title: "Identify",
+      title: "Full Attack Surface Visibility",
       description:
-        "Alert fatigue is a real thing. Footprint understands your environment and only shows what you really care about.",
+        "Leverage our Attack Surface Management (ASM) capabilities to gain unparalleled visibility into your organization's security posture and ensure compliance requirements are always met",
       icon: Identify,
     },
     actions: {
-      title: "Actions",
+      title: "Contextual Prioritization",
       description:
-        "Alert fatigue is a real thing. Footprint understands your environment and only shows what you really care about.",
+        "Identify & remediate exploitable attack vectors by correlating application-level exploits with infrastructure misconfigurations across your entire attack surface",
       icon: Actions,
     },
     prioritize: {
-      title: "Prioritize",
+      title: "Effective Remediation",
       description:
-        "Alert fatigue is a real thing. Footprint understands your environment and only shows what you really care about.",
+        "Leverage our AI-assisted collaborative remediation workflows to foster collaboration between cross-functional teams with automated progress tracking, notifications & reporting",
       icon: Prioritize,
     },
   };

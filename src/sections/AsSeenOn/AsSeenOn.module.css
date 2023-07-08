@@ -10,8 +10,52 @@
   padding: 80px 30px;
 }
 
+.container span {
+  color: #333;
+  text-align: center;
+  opacity: 0.5;
+  padding: 10px 0;
+}
+
+.container.partnerDisplay span {
+  color: #fff;
+  text-align: left;
+}
+
 .white {
   background: white;
+}
+
+.small {
+  background: transparent;
+  padding: 0;
+}
+
+.small .list img {
+  width: 80px;
+  height: 80px;
+  object-fit: scale-down;
+  filter: saturate(0) brightness(500%);
+}
+
+/** Specific adjustments for certain images */
+.list img[alt="SAPLogo"] {
+  filter: saturate(0);
+}
+
+.list img[alt="Silversky"] {
+  filter: invert(100%);
+}
+
+.list img[alt="SGI"] {
+  filter: saturate(0) invert(100%) brightness(100%);
+}
+
+.list img[alt="IIII"] {
+  filter: saturate(0) invert(100%);
+}
+.list img[alt="Defensestorm"] {
+  filter: saturate(0) invert(100%);
 }
 
 .list {
@@ -19,6 +63,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 20px;
 }
 
 .list img {

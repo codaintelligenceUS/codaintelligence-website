@@ -7,6 +7,7 @@ import { EffectiveRemediation } from "./useCases/EffectiveRemediation";
 import { FullAttackSurface } from "./useCases/FullAttackSurface";
 import { TechnologyPartners } from "./partners/TechnologyPartners";
 import { PAGES } from "@/variables";
+import { MSPPartners } from "./partners/MSPPartners";
 
 export function MainRouter() {
   return (
@@ -17,6 +18,9 @@ export function MainRouter() {
         </Route>
         <Route path={PAGES.technologyPartners}>
           <TechnologyPartners />
+        </Route>
+        <Route path={PAGES.mspPartners}>
+          <MSPPartners />
         </Route>
         <Route path={PAGES.resources}>
           <Resources />

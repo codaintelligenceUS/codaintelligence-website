@@ -10,7 +10,7 @@ import Blokworkx from "@/assets/blokworkx.png";
 import Defensestorm from "@/assets/defensestorm.png";
 import Dod from "@/assets/dodsecurity.png";
 
-export function Partners() {
+export function TechnologyPartners() {
   const partners = [
     {
       icon: Silversky,

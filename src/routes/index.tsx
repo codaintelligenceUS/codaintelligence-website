@@ -1,21 +1,12 @@
 import { Route, Router, Switch } from "wouter";
 import { Company } from "./Company";
 import { Home } from "./Home";
-import { Partners } from "./Partners";
 import { Resources } from "./Resources";
 import { ContextualPrioritization } from "./useCases/ContextualPrioritization";
 import { EffectiveRemediation } from "./useCases/EffectiveRemediation";
 import { FullAttackSurface } from "./useCases/FullAttackSurface";
-
-export const PAGES = {
-  home: "",
-  company: "company/",
-  partners: "partners/",
-  resources: "resources/",
-  contextualPrioritization: "contextualPrioritization/",
-  effectiveRemediation: "effectiveRemediation/",
-  fullAttackSurface: "fullAttackSurface/",
-};
+import { TechnologyPartners } from "./partners/TechnologyPartners";
+import { PAGES } from "@/variables";
 
 export function MainRouter() {
   return (
@@ -24,8 +15,8 @@ export function MainRouter() {
         <Route path={PAGES.company}>
           <Company />
         </Route>
-        <Route path={PAGES.partners}>
-          <Partners />
+        <Route path={PAGES.technologyPartners}>
+          <TechnologyPartners />
         </Route>
         <Route path={PAGES.resources}>
           <Resources />

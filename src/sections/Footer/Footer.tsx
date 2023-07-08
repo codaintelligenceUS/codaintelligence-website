@@ -1,8 +1,8 @@
 import { Logo } from "@/atoms";
 import styles from "./Footer.module.css";
 import { Mail, Phone, Pin } from "lucide-react";
-import { PAGES } from "@/routes";
 import { Link } from "wouter";
+import { PAGES } from "@/variables";
 
 export function Footer() {
   return (
@@ -31,7 +31,9 @@ export function Footer() {
       />
       <LinkGroup
         title="Partners"
-        links={[{ title: "Technology Partners", href: PAGES.partners }]}
+        links={[
+          { title: "Technology Partners", href: PAGES.technologyPartners },
+        ]}
       />
       <LinkGroup
         title="Get in touch"

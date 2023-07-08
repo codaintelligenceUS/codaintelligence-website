@@ -5,8 +5,8 @@ import {
 import { NavigationEntry } from "./NavigationEntry";
 import styles from "./Menu.module.css";
 import { DemoButton, Logo } from "@/atoms";
-import { PAGES } from "@/routes";
 import { Link } from "wouter";
+import { PAGES } from "@/variables";
 
 export function Menu() {
   return (
@@ -50,14 +50,18 @@ function LeftOptions() {
         />
         <NavigationEntry
           title="Partners"
-          href={PAGES.partners}
-          // links={[
-          //   {
-          //     title: "Technology Partners",
-          //     href: "/partners",
-          //     description: "Technology Partners",
-          //   },
-          // ]}
+          links={[
+            {
+              title: "Technology Partners",
+              href: PAGES.technologyPartners,
+              description: "Technology Partners",
+            },
+            {
+              title: "Managed Service Providers",
+              href: PAGES.mspPartners,
+              description: "Managed Service Providers",
+            },
+          ]}
         />
         <NavigationEntry title="Guide" href={PAGES.resources} />
         <NavigationEntry title="Company" href={PAGES.company} />

@@ -12,9 +12,11 @@ import { CardsTitle } from "./CardsTitle/CardsTitle";
 import { Career } from "./Career/Career";
 import { AsSeenOn } from "./AsSeenOn/AsSeenOn";
 import { Guides } from "./Guides/Guides";
+import { DetailIllustration } from "./DetailIllustration/DetailIllustration";
 
 export {
   API,
+  DetailIllustration,
   BookDemo,
   Feedback,
   Footer,

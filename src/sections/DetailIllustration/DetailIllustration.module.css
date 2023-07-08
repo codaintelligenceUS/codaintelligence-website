@@ -1,0 +1,9 @@
+.container {
+  background: linear-gradient(180deg, #560e2e 0.99%, #570e2f 100%);
+  padding: 20vh 20vw;
+}
+
+.container > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}

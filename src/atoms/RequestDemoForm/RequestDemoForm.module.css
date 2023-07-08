@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+
+  --background: 0 0% 20%;
+  --foreground: 0 0% 20%;
+
+  color: var(--foreground);
+}
+
+.container > *,
+.container form label {
+  color: #333;
+}
+
+.container form {
+  max-width: 410px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .fields {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bottomFields {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottomFields button {
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+.container h1 {
+  font-weight: 600;
+}

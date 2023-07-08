@@ -1,3 +1,4 @@
+import { RequestDemoForm } from "@/atoms/RequestDemoForm/RequestDemoForm";
 import { AsSeenOn, Header } from "@/sections";
 
 export function MSPPartners() {
@@ -8,7 +9,7 @@ export function MSPPartners() {
         title="Get started with CODA Footprint today"
         subtitle="Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat."
         type="titleWithPhoto"
-        sideChildren={<div>hello</div>}
+        sideChildren={<RequestDemoForm />}
       >
         <AsSeenOn
           isSmall

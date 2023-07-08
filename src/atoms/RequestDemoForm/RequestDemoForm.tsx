@@ -14,13 +14,15 @@ import { Button } from "..";
 import styles from "./RequestDemoForm.module.css";
 import { useState } from "react";
 import { CheckCircle } from "lucide-react";
+import { useHubspotSubmit } from "@/utils/hubspot";
 
 const formSchema = z.object({
-  name: z.string().min(1),
+  firstname: z.string().min(1),
+  lastname: z.string().min(1),
   email: z.string().email(),
   company: z.string().min(1),
-  jobTitle: z.string().min(1),
-  whereDidYouHear: z.string(),
+  jobtitle: z.string().min(1),
+  where_did_you_hear_about_us_: z.string(),
 });
 
 export function RequestDemoForm() {
@@ -28,9 +30,14 @@ export function RequestDemoForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
   });
+  const { handleSubmit } = useHubspotSubmit({
+    formId: "44a593b8-9f80-4be4-849e-f2fdb34b5e6b",
+    portalId: "8924509",
+  });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsFilled(true);
+    await handleSubmit(values);
     console.log(values);
   }
 
@@ -49,7 +56,16 @@ export function RequestDemoForm() {
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}>
               <div className={styles.fields}>
-                <Field fieldName="name" name="Name" control={form.control} />
+                <Field
+                  fieldName="firstname"
+                  name="First Name"
+                  control={form.control}
+                />
+                <Field
+                  fieldName="lastname"
+                  name="Last Name"
+                  control={form.control}
+                />
                 <Field fieldName="email" name="E-mail" control={form.control} />
                 <Field
                   fieldName="company"
@@ -57,14 +73,14 @@ export function RequestDemoForm() {
                   control={form.control}
                 />
                 <Field
-                  fieldName="jobTitle"
+                  fieldName="jobtitle"
                   name="Job Title"
                   control={form.control}
                 />
               </div>
               <div className={styles.bottomFields}>
                 <Field
-                  fieldName="whereDidYouHear"
+                  fieldName="where_did_you_hear_about_us_"
                   name="Where did you hear about us ?"
                   control={form.control}
                 />

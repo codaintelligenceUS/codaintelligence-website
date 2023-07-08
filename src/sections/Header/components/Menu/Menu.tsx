@@ -13,7 +13,9 @@ export function Menu() {
     <div className={styles.container}>
       <LeftOptions />
       <Link to={PAGES.home}>
-        <Logo />
+        <div className={styles.logoContainer}>
+          <Logo />
+        </div>
       </Link>
       <RightOptions />
     </div>

@@ -17,6 +17,21 @@
   color: #333;
 }
 
+.container .filled {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.filled svg {
+  stroke: #333;
+}
+.filled h1,
+.filled h2 {
+  color: #333;
+}
+
 .container form {
   max-width: 410px;
   display: flex;

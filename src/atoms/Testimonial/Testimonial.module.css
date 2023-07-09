@@ -43,3 +43,20 @@
 
 .name {
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 10vh 5vw;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .container h1 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .container h1 {
+    font-size: 18px;
+  }
+}

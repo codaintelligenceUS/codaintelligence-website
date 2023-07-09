@@ -1,8 +1,8 @@
 import { useState } from "react";
-import styles from "./DemoButton.module.css";
+import { Button } from "..";
 import { Modal } from "../Modal/Modal";
 import { RequestDemoForm } from "../RequestDemoForm/RequestDemoForm";
-import { Button } from "..";
+import styles from "./DemoButton.module.css";
 /**
  * This is a special button for the Demo modal
  */

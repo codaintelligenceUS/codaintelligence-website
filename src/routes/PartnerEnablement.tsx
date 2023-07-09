@@ -1,11 +1,7 @@
-import {
-  CardsTitle,
-  DetailIllustration,
-  Footer,
-  Header,
-  TitleAndContent,
-} from "@/sections";
 import PartnerEnablementPhoto from "@/assets/partnerEnablement.webp";
+import { DemoButton } from "@/atoms";
+import { RequestDemoForm } from "@/atoms/RequestDemoForm/RequestDemoForm";
+import { CardsTitle, Footer, Header, TitleAndContent } from "@/sections";
 import {
   BarChart2,
   BrainCog,
@@ -16,8 +12,6 @@ import {
   Truck,
   UploadCloud,
 } from "lucide-react";
-import { DemoButton } from "@/atoms";
-import { RequestDemoForm } from "@/atoms/RequestDemoForm/RequestDemoForm";
 
 export function PartnerEnablement() {
   return (

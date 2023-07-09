@@ -1,4 +1,6 @@
 .modal {
+  margin: auto !important;
+  border-radius: 20px;
 }
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.5);

@@ -53,6 +53,7 @@
   line-height: normal;
   opacity: 0.8;
   max-width: 700px;
+  white-space: pre-wrap;
 }
 
 .container h2:not(:last-child) {

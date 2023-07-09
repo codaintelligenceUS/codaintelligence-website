@@ -1,0 +1,12 @@
+.container {
+  padding: 15vh 10vw;
+  background: linear-gradient(to bottom, #161831 0%, #030817 80%, #0f153c 100%);
+}
+
+.cardsList {
+  padding: 15vh 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 20px;
+  justify-content: space-around;
+}

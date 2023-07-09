@@ -15,6 +15,8 @@ export type CardProps = {
   fixedHeaderPhoto?: boolean;
   /** Whether to use the special design mode */
   isSpecial?: boolean;
+  /** Whether to apply a smaller font size */
+  isSmallTitle?: boolean;
 };
 
 export function Card(props: CardProps) {

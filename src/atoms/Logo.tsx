@@ -46,8 +46,8 @@ function LogoBadge(props: CommonProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="60"
       height={props.height || 86}
+      width={props.height || 86}
       viewBox="0 0 60 86"
       fill="none"
     >

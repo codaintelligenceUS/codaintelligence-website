@@ -1,3 +1,4 @@
+import { Logo } from "..";
 import styles from "./Card.module.css";
 export type CardProps = {
   /** Optional icon */
@@ -12,6 +13,8 @@ export type CardProps = {
   headerPhoto?: string;
   /** Whether to ensure same size for header photo */
   fixedHeaderPhoto?: boolean;
+  /** Whether to use the special design mode */
+  isSpecial?: boolean;
 };
 
 export function Card(props: CardProps) {
@@ -19,13 +22,20 @@ export function Card(props: CardProps) {
     <div
       className={`${styles.card} ${
         props.fixedHeaderPhoto ? styles.fixedHeaderPhoto : ""
-      }`}
+      } ${props.isSpecial ? styles.special : ""}`}
     >
       {props.headerPhoto && (
         <img src={props.headerPhoto} alt="" className={styles.headerPhoto} />
       )}
       <div className={styles.content}>
         {props.icon}
+        {props.isSpecial && (
+          <div className={styles.specialBadge}>
+            <div className={styles.separator} />
+            <Logo height={30} type="badge" isWhite />
+            <div className={styles.separator} />
+          </div>
+        )}
         {props.title && <h1>{props.title}</h1>}
         {props.content &&
           (typeof props.content === "string" ? (

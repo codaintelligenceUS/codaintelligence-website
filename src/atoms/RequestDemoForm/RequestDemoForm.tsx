@@ -7,14 +7,14 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { useHubspotSubmit } from "@/utils/hubspot";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { CheckCircle } from "lucide-react";
+import { useState } from "react";
 import { Control, useForm } from "react-hook-form";
 import * as z from "zod";
 import { Button } from "..";
 import styles from "./RequestDemoForm.module.css";
-import { useState } from "react";
-import { CheckCircle } from "lucide-react";
-import { useHubspotSubmit } from "@/utils/hubspot";
 
 const formSchema = z.object({
   firstname: z.string().min(1),
@@ -38,7 +38,6 @@ export function RequestDemoForm(props: { isPartner?: boolean }) {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsFilled(true);
     await handleSubmit(values);
-    console.log(values);
   }
 
   return (

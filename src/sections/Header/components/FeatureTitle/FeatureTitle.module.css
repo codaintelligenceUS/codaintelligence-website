@@ -80,3 +80,69 @@ h1.you {
   margin: 0;
   width: calc(100% - 13px);
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding-top: 10vh;
+  }
+  .container h1 {
+    font-size: 60px;
+  }
+  .swooshes {
+    bottom: -12px;
+    margin-left: -286px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding-top: 10vh;
+  }
+  .container h1 {
+    font-size: 50px;
+  }
+  .swooshes {
+    bottom: 50px;
+    margin-left: 36px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container {
+    padding-top: 10vh;
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+
+  .text p {
+    max-width: 200px;
+  }
+  .swooshes {
+    bottom: -17px;
+    margin-left: -140px;
+    transform: scale(0.5);
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .container {
+    padding-top: 5vh;
+  }
+  .container h1 {
+    font-size: 60px;
+  }
+  .swooshes {
+    margin-left: -250px;
+  }
+}
+@media screen and (max-height: 375px) {
+  .container {
+    padding-top: 5vh;
+  }
+  .container h1 {
+    font-size: 40px;
+  }
+  .swooshes {
+    margin-left: -200px;
+    transform: scale(0.5);
+  }
+}

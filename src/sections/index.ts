@@ -13,6 +13,7 @@ import { Career } from "./Career/Career";
 import { AsSeenOn } from "./AsSeenOn/AsSeenOn";
 import { Guides } from "./Guides/Guides";
 import { DetailIllustration } from "./DetailIllustration/DetailIllustration";
+import { ConAuAct } from "./ConAuAct/ConAuAct";
 
 export {
   API,
@@ -30,4 +31,5 @@ export {
   Career,
   AsSeenOn,
   Guides,
+  ConAuAct,
 };

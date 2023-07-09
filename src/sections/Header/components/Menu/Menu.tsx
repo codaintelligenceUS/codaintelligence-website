@@ -56,12 +56,12 @@ function LeftOptions() {
             {
               title: "Technology Partners",
               href: PAGES.technologyPartners,
-              description: "Technology Partners",
+              description: "Explore integrations",
             },
             {
               title: "Managed Service Providers",
               href: PAGES.mspPartners,
-              description: "Managed Service Providers",
+              description: "Become a CODA Partner",
             },
           ]}
         />

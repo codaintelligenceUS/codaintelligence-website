@@ -1,5 +1,5 @@
 .container {
-  background: linear-gradient(to bottom, #570e2f 0%, #ec1c5b 80%, #161831 100%);
+  background: linear-gradient(to bottom, #570e2f 0%, #ec1c5b 80%, #fff 100%);
   padding: 20vh 20vw;
 
   display: flex;

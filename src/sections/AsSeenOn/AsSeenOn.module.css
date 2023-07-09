@@ -1,8 +1,8 @@
 .container {
   background: linear-gradient(
-    #181831 0%,
+    #fff 0%,
     rgba(255, 255, 255, 1) 25%,
-    rgba(255, 255, 255, 1) 75%,
+    rgba(255, 255, 255, 1) 85%,
     #171831 100%
   );
   display: flex;

@@ -7,6 +7,7 @@
     #0f153c 100%
   );
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 20vh 15vw;

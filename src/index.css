@@ -91,3 +91,7 @@ button svg {
   height: 20px;
   margin-right: 10px;
 }
+
+img {
+  object-fit: contain;
+}

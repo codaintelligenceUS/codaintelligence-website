@@ -120,3 +120,16 @@
   flex: 1;
   margin: 0 10px;
 }
+
+@media screen and (max-width: 400px) {
+  .special {
+    border: 0;
+  }
+  .special .content {
+    padding: 5px;
+  }
+  .special .content > svg {
+    width: 60px;
+    height: 60px;
+  }
+}

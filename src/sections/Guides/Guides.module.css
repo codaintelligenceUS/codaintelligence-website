@@ -15,3 +15,12 @@
 .list > * {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 600px) {
+  .list {
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+}

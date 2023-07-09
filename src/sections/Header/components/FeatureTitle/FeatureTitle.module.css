@@ -11,6 +11,10 @@
 .flare {
   position: absolute;
   z-index: 0;
+  animation-name: flareMove;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+  animation-timing-function: linear;
 }
 
 .container h1 {
@@ -144,5 +148,20 @@ h1.you {
   .swooshes {
     margin-left: -200px;
     transform: scale(0.5);
+  }
+}
+
+@keyframes flareMove {
+  from {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-20%) translateY(-30%) scale(2);
+  }
+  75% {
+    transform: translateX(-50%) translateY(-10%) scale(1.5);
+  }
+  to {
+    transform: translateX(0%);
   }
 }

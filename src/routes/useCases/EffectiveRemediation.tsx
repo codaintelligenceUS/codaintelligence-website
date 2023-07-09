@@ -1,8 +1,8 @@
+import Sgi from "@/assets/sgi.png";
 import { DemoButton } from "@/atoms";
 import { Card } from "@/atoms/Card/Card";
 import { CardsTitle, Feedback, Footer, Header, Report } from "@/sections";
 import { Brain, TrendingUp, Wrench } from "lucide-react";
-import Sgi from "@/assets/sgi.png";
 export function EffectiveRemediation() {
   return (
     <>
@@ -31,16 +31,16 @@ export function EffectiveRemediation() {
         }}
         cards={[
           {
-            icon: <Brain />,
-            title: "Know your first move",
-            content:
-              "Deploy fixes to your exploitable critical business workloads first.",
-          },
-          {
             icon: <Wrench />,
             title: "Manage remediation",
             content:
               "Leverage our AI-assisted collaborative remediation workflows to foster collaboration between cross-functional teams with automated progress tracking, notifications & reporting.",
+          },
+          {
+            icon: <Brain />,
+            title: "Know your first move",
+            content:
+              "Deploy fixes to your exploitable critical business workloads first.",
           },
           {
             icon: <TrendingUp />,

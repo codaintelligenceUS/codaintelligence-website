@@ -1,8 +1,8 @@
+import GreenCloud from "@/assets/greencloud.png";
 import { DemoButton } from "@/atoms";
 import { Card } from "@/atoms/Card/Card";
 import { CardsTitle, Feedback, Footer, Header, Report } from "@/sections";
 import { Activity, GitBranch, Zap } from "lucide-react";
-import GreenCloud from "@/assets/greencloud.png";
 
 export function ContextualPrioritization() {
   return (
@@ -34,16 +34,16 @@ export function ContextualPrioritization() {
         }}
         cards={[
           {
-            icon: <Zap />,
-            title: "Critical Exploit Validation",
-            content:
-              "Focus on true exposure based on exploit validation & business impact.",
-          },
-          {
             icon: <GitBranch />,
             title: "Correlate system data with vulnerability data",
             content:
               "Identify & remediate exploitable attack vectors by correlating application-level exploits with infrastructure misconfigurations across your entire attack surface.",
+          },
+          {
+            icon: <Zap />,
+            title: "Critical Exploit Validation",
+            content:
+              "Focus on true exposure based on exploit validation & business impact.",
           },
           {
             icon: <Activity />,

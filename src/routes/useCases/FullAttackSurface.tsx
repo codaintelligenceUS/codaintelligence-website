@@ -1,8 +1,8 @@
+import SilverskyLogo from "@/assets/silversky.png";
 import { DemoButton } from "@/atoms";
 import { Card } from "@/atoms/Card/Card";
 import { CardsTitle, Feedback, Footer, Header, Report } from "@/sections";
 import { Box, Cloud, Laptop, Radio, Search, Target } from "lucide-react";
-import SilverskyLogo from "@/assets/silversky.png";
 
 export function FullAttackSurface() {
   return (
@@ -33,17 +33,16 @@ export function FullAttackSurface() {
         cards={[
           {
             icon: <Target />,
-            content:
-              "Leverage our Attack Surface Management (ASM) capabilities to gain unparalleled visibility into your organization's security posture & ensure compliance requirements are always met.",
-          },
-          {
-            icon: <Cloud />,
-            content: "Across all on-premises & cloud workloads",
+            content: "Continuous Compliance Process",
           },
           {
             icon: <Laptop />,
             content:
-              "Complete asset inventory. Quickly identify rogue assets: devices, applications, cloud workloads, etc.",
+              "Complete asset inventory: identify rogue assets, devices, applications, cloud workloads",
+          },
+          {
+            icon: <Cloud />,
+            content: "Across all on-premises & cloud workloads",
           },
           {
             icon: <Search />,

@@ -1,17 +1,17 @@
-import styles from "./AsSeenOn.module.css";
-import PeerInsights from "./assets/peerInsights.png";
-import G2 from "./assets/g2.png";
-import MsspAlert from "./assets/msspalert.png";
-import Capterra from "./assets/capterra.png";
-import CyberMagazine from "./assets/cybermagazine.png";
-import SAPLogo from "@/assets/sap.png";
-import Silversky from "@/assets/silversky.png";
-import SGI from "@/assets/sgi.png";
-import HWN from "@/assets/hwn.png";
 import IIII from "@/assets/1111.png";
 import Blokworkx from "@/assets/blokworkx.png";
 import Defensestorm from "@/assets/defensestorm.png";
 import Dod from "@/assets/dodsecurity.png";
+import HWN from "@/assets/hwn.png";
+import SAPLogo from "@/assets/sap.png";
+import SGI from "@/assets/sgi.png";
+import Silversky from "@/assets/silversky.png";
+import styles from "./AsSeenOn.module.css";
+import Capterra from "./assets/capterra.png";
+import CyberMagazine from "./assets/cybermagazine.png";
+import G2 from "./assets/g2.svg";
+import MsspAlert from "./assets/msspalert.png";
+import PeerInsights from "./assets/peerInsights.png";
 
 export type AsSeenOnProps = {
   isWhite?: boolean;

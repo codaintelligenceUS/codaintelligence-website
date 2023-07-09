@@ -59,3 +59,15 @@
 .container h2:not(:last-child) {
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 400px) {
+  .container h3 {
+    font-size: 12px;
+  }
+  .container h1 {
+    font-size: 28px;
+  }
+  .container h2 {
+    font-size: 16px;
+  }
+}

@@ -25,7 +25,7 @@ const formSchema = z.object({
   where_did_you_hear_about_us_: z.string(),
 });
 
-export function RequestDemoForm() {
+export function RequestDemoForm(props: { isPartner?: boolean }) {
   const [isFilled, setIsFilled] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -51,8 +51,16 @@ export function RequestDemoForm() {
         </div>
       ) : (
         <>
-          <h1>Request a Footprint demo</h1>
-          <h2>Let us show you the power of Footprint</h2>
+          <h1>
+            {props.isPartner
+              ? "Become a CODA Partner"
+              : "Request a Footprint demo"}
+          </h1>
+          <h2>
+            {props.isPartner
+              ? "Fill out the form below to become a partner"
+              : "Fill out the form below to request a demo"}
+          </h2>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}>
               <div className={styles.fields}>

@@ -1,5 +1,12 @@
-import { Button, Logo } from "@/atoms";
-import { CardsTitle, Feedback, Footer, Header, ConAuAct } from "@/sections";
+import { Button, DemoButton, Logo } from "@/atoms";
+import {
+  CardsTitle,
+  Feedback,
+  Footer,
+  Header,
+  ConAuAct,
+  BookDemo,
+} from "@/sections";
 import { BarChart, CircleDot, Globe2, ShieldCheck } from "lucide-react";
 import SAPLogo from "@/assets/sap.png";
 import Silversky from "@/assets/silversky.png";
@@ -9,6 +16,7 @@ import IIII from "@/assets/1111.png";
 import Blokworkx from "@/assets/blokworkx.png";
 import Defensestorm from "@/assets/defensestorm.png";
 import Dod from "@/assets/dodsecurity.png";
+import { RequestDemoForm } from "@/atoms/RequestDemoForm/RequestDemoForm";
 
 export function MSPPartners() {
   const partners = [
@@ -81,7 +89,7 @@ If you are a consulting firm, a systems integrator, a technology vendor, a servi
 Join us as we enable risk-based application and software supply chain security to help organizations deliver secure software faster!`}
         sideChildren={<Logo height={300} type="badge" />}
       >
-        <Button>Become a partner</Button>
+        <DemoButton type="partner" />
       </Header>
       <CardsTitle
         fixedHeight

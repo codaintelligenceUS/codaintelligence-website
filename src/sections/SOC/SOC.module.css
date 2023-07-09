@@ -77,4 +77,9 @@
   .reportInfo {
     flex-direction: column;
   }
+
+  .reports {
+    width: 80vw;
+    height: 888888880vw;
+  }
 }

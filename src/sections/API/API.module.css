@@ -3,9 +3,16 @@
   align-items: center;
   justify-content: center;
   padding: 0 10vw;
+  box-sizing: border-box;
   flex-wrap: wrap;
 }
 
 .container img {
   max-width: 500px;
+}
+
+@media screen and (max-width: 550px) {
+  .container img {
+    width: 50vw;
+  }
 }

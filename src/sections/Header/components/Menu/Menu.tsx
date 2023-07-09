@@ -1,23 +1,123 @@
+import { DemoButton, Logo } from "@/atoms";
 import {
   NavigationMenu,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { NavigationEntry } from "./NavigationEntry";
-import styles from "./Menu.module.css";
-import { DemoButton, Logo } from "@/atoms";
-import { Link } from "wouter";
 import { PAGES } from "@/variables";
+import {
+  BarChart3,
+  Book,
+  BrainCog,
+  Building,
+  Cog,
+  GitBranch,
+  MenuIcon,
+  Radar,
+} from "lucide-react";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "usehooks-ts";
+import { Link, useLocation } from "wouter";
+import styles from "./Menu.module.css";
+import { NavigationEntry } from "./NavigationEntry";
 
 export function Menu() {
+  const isMobile = useMediaQuery("(max-width: 1024px)");
+
   return (
     <div className={styles.container}>
-      <LeftOptions />
+      {isMobile ? <MobileMenu /> : <LeftOptions />}
       <Link to={PAGES.home}>
         <div className={styles.logoContainer}>
           <Logo />
         </div>
       </Link>
-      <RightOptions />
+      {!isMobile && <RightOptions />}
+    </div>
+  );
+}
+
+/**
+ * Wrapper over the menu options that is optimized for mobile.
+ * TODO: Find a way to reuse the same elements for this instead of a separate component
+ */
+function MobileMenu() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [location] = useLocation();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
+  return (
+    <div
+      className={`${styles.mobileMenuContainer} ${isOpen ? styles.open : ""}`}
+    >
+      <div className={styles.mobileMenuIcon} onClick={() => setIsOpen(!isOpen)}>
+        <MenuIcon />
+      </div>
+      <ul>
+        <li>
+          Platform
+          <ul>
+            <li>
+              <Link to={PAGES.fullAttackSurface}>
+                <Radar />
+                Full Attack Surface Visibility
+              </Link>
+            </li>
+            <li>
+              <Link to={PAGES.contextualPrioritization}>
+                <BarChart3 />
+                Contextual Prioritization
+              </Link>
+            </li>
+            <li>
+              <Link to={PAGES.effectiveRemediation}>
+                <GitBranch />
+                Effective Remediation
+              </Link>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Partners
+          <ul>
+            <li>
+              <Link to={PAGES.technologyPartners}>
+                <Cog />
+                Technology Partners
+              </Link>
+            </li>
+            <li>
+              <Link to={PAGES.mspPartners}>
+                <BrainCog />
+                Managed Service Providers
+              </Link>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <Link to={PAGES.resources}>
+            <Book />
+            Guide
+          </Link>
+        </li>
+        <li>
+          <Link to={PAGES.company}>
+            <Building />
+            Company
+          </Link>
+        </li>
+        <hr />
+        <li>
+          <a href="https://support.codaintelligence.com" target="_blank">
+            Partner Login
+          </a>
+        </li>
+        <li>
+          <DemoButton />
+        </li>
+      </ul>
     </div>
   );
 }

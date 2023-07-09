@@ -4,11 +4,24 @@
   align-items: center;
   justify-content: center;
   padding: 50px;
+  gap: 50px;
 }
 
 .container img {
   width: 200px;
   height: 200px;
   object-fit: contain;
-  margin-right: 50px;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container img {
+    width: 150px;
+    height: 140px;
+  }
 }

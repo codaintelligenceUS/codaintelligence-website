@@ -1,13 +1,6 @@
 import { DemoButton } from "@/atoms";
 import { Card } from "@/atoms/Card/Card";
-import {
-  CardsTitle,
-  Feedback,
-  Footer,
-  Header,
-  HowItWorks,
-  Report,
-} from "@/sections";
+import { CardsTitle, Feedback, Footer, Header, Report } from "@/sections";
 import { Activity, GitBranch, Zap } from "lucide-react";
 import GreenCloud from "@/assets/greencloud.png";
 
@@ -15,7 +8,6 @@ export function ContextualPrioritization() {
   return (
     <>
       <Header
-        isBlueBottomGradient
         type="titleWithPhoto"
         category="Prioritization"
         title="Contextual Prioritization"
@@ -30,7 +22,7 @@ export function ContextualPrioritization() {
       >
         <DemoButton isLarge />
       </Header>
-      <HowItWorks isPinkEndingGradient />
+      {/* <HowItWorks isPinkEndingGradient /> */}
       <CardsTitle
         fixedHeight
         title={{

@@ -1,13 +1,6 @@
 import { DemoButton } from "@/atoms";
 import { Card } from "@/atoms/Card/Card";
-import {
-  CardsTitle,
-  Feedback,
-  Footer,
-  Header,
-  HowItWorks,
-  Report,
-} from "@/sections";
+import { CardsTitle, Feedback, Footer, Header, Report } from "@/sections";
 import { Brain, TrendingUp, Wrench } from "lucide-react";
 import Sgi from "@/assets/sgi.png";
 export function EffectiveRemediation() {
@@ -57,8 +50,9 @@ export function EffectiveRemediation() {
           },
         ]}
       />
-      <HowItWorks />
+      {/* <HowItWorks /> */}
       <Feedback
+        isDarkBlue
         testimonial="We just love how CODA’s platform allows us to work collaboratively with IT remediation owners to get critical work done. It’s so much faster and we all get that instant gratification of making sure we are working on what’s truly important for the customer"
         authorName="Cory Clark"
         companyLogo={Sgi}

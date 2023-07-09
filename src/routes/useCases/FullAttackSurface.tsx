@@ -1,13 +1,6 @@
 import { DemoButton } from "@/atoms";
 import { Card } from "@/atoms/Card/Card";
-import {
-  CardsTitle,
-  Feedback,
-  Footer,
-  Header,
-  HowItWorks,
-  Report,
-} from "@/sections";
+import { CardsTitle, Feedback, Footer, Header, Report } from "@/sections";
 import { Box, Cloud, Laptop, Radio, Search, Target } from "lucide-react";
 import SilverskyLogo from "@/assets/silversky.png";
 
@@ -66,8 +59,9 @@ export function FullAttackSurface() {
           },
         ]}
       />
-      <HowItWorks />
+      {/* <HowItWorks /> */}
       <Feedback
+        isDarkBlue
         testimonial="When we look for service partners in the market, their solution must be best a breed and easy to consume for our customers and channel partners. We have over 25 years of securing our customers and this is a significant upgrade to our current vulnerability management offering."
         authorName="Cary Conrad"
         companyLogo={SilverskyLogo}

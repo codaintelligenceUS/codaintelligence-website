@@ -1,12 +1,5 @@
 import { Button, DemoButton, Logo } from "@/atoms";
-import {
-  CardsTitle,
-  Feedback,
-  Footer,
-  Header,
-  ConAuAct,
-  BookDemo,
-} from "@/sections";
+import { CardsTitle, Feedback, Footer, Header, ConAuAct } from "@/sections";
 import { BarChart, CircleDot, Globe2, ShieldCheck } from "lucide-react";
 import SAPLogo from "@/assets/sap.png";
 import Silversky from "@/assets/silversky.png";
@@ -16,7 +9,6 @@ import IIII from "@/assets/1111.png";
 import Blokworkx from "@/assets/blokworkx.png";
 import Defensestorm from "@/assets/defensestorm.png";
 import Dod from "@/assets/dodsecurity.png";
-import { RequestDemoForm } from "@/atoms/RequestDemoForm/RequestDemoForm";
 
 export function MSPPartners() {
   const partners = [

@@ -8,4 +8,5 @@ export const PAGES = {
   contextualPrioritization: "contextualPrioritization/",
   effectiveRemediation: "effectiveRemediation/",
   fullAttackSurface: "fullAttackSurface/",
+  partnerEnablement: "partnerEnablement/",
 };

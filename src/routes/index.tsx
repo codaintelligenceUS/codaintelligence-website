@@ -8,6 +8,7 @@ import { FullAttackSurface } from "./useCases/FullAttackSurface";
 import { PAGES } from "@/variables";
 import { MSPPartners } from "./partners/MSPPartners";
 import { TechPartners } from "./partners/TechPartners";
+import { PartnerEnablement } from "./PartnerEnablement";
 
 export function MainRouter() {
   return (
@@ -33,6 +34,9 @@ export function MainRouter() {
         </Route>
         <Route path={PAGES.fullAttackSurface}>
           <FullAttackSurface />
+        </Route>
+        <Route path={PAGES.partnerEnablement}>
+          <PartnerEnablement />
         </Route>
         <Route>
           <Home />

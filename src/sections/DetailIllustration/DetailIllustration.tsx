@@ -5,13 +5,19 @@ export type DetailIllustrationProps = {
   title: string;
   text: string;
   illustration: JSX.Element;
+  isReversed?: boolean;
+  isBlueBackground?: boolean;
 };
 
 export function DetailIllustration(props: DetailIllustrationProps) {
   return (
-    <section className={styles.container}>
+    <section
+      className={`${styles.container} ${
+        props.isBlueBackground ? styles.blueBackground : ""
+      }`}
+    >
       <IllustrationBox
-        isReversed
+        isReversed={props.isReversed}
         title={props.title}
         description={props.text}
         boxContent={props.illustration}

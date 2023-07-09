@@ -3,6 +3,10 @@
   padding: 20vh 20vw;
 }
 
+.blueBackground {
+  background: linear-gradient(to bottom, #161831 0%, #030817 80%, #303399 100%);
+}
+
 .container > * {
   margin-top: 0;
   margin-bottom: 0;

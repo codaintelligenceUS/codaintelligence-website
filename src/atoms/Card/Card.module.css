@@ -32,6 +32,7 @@
 
 .card p {
   opacity: 0.8;
+  white-space: pre-wrap;
 }
 
 .card h1,
@@ -96,6 +97,7 @@
   height: 120px;
 }
 
+.special .content p,
 .special .content h1,
 .special .content li {
   color: white;

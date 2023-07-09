@@ -13,6 +13,7 @@ type CardsTitleProps = {
   /** Whether to show more items on a row */
   isLargeGrid?: boolean;
   isBlueBackground?: boolean;
+  isDarkBlueBackground?: boolean;
   isNoMargin?: boolean;
 };
 
@@ -25,7 +26,7 @@ export function CardsTitle(props: CardsTitleProps) {
         props.isLargeGrid ? styles.largeGrid : ""
       } ${props.isBlueBackground ? styles.blueBackground : ""} ${
         props.isNoMargin ? styles.noMargin : ""
-      }`}
+      } ${props.isDarkBlueBackground ? styles.darkBlueBackground : ""}`}
     >
       <Title {...props.title} />
 

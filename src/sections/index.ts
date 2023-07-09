@@ -14,6 +14,7 @@ import { AsSeenOn } from "./AsSeenOn/AsSeenOn";
 import { Guides } from "./Guides/Guides";
 import { DetailIllustration } from "./DetailIllustration/DetailIllustration";
 import { ConAuAct } from "./ConAuAct/ConAuAct";
+import { TitleAndContent } from "./TitleAndContent/TitleAndContent";
 
 export {
   API,
@@ -32,4 +33,5 @@ export {
   AsSeenOn,
   Guides,
   ConAuAct,
+  TitleAndContent,
 };

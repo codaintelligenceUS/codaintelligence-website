@@ -1,4 +1,10 @@
-import { CardsTitle, DetailIllustration, Header } from "@/sections";
+import {
+  CardsTitle,
+  DetailIllustration,
+  Footer,
+  Header,
+  TitleAndContent,
+} from "@/sections";
 import PartnerEnablementPhoto from "@/assets/partnerEnablement.webp";
 import {
   BarChart2,
@@ -11,6 +17,7 @@ import {
   UploadCloud,
 } from "lucide-react";
 import { DemoButton } from "@/atoms";
+import { RequestDemoForm } from "@/atoms/RequestDemoForm/RequestDemoForm";
 
 export function PartnerEnablement() {
   return (
@@ -139,6 +146,13 @@ Ability to drive onlien sales through our Funnel uniquely positions you towards 
           },
         ]}
       />
+      <TitleAndContent
+        title="See for yourself what CODA Footprint can do to accelerate your business growth"
+        subtitle="Explore how CODA Footprint can streamline your cybersecurity-related operations, enhance productivity and efficiency across the entire business so you can become more profitable"
+      >
+        <RequestDemoForm />
+      </TitleAndContent>
+      <Footer />
     </>
   );
 }

@@ -15,16 +15,13 @@ export function DemoButton(props: {
 
   return (
     <>
-      {type === "demo" ? (
-        <button
-          className={`${styles.button} ${props.isLarge ? styles.large : ""}`}
-          onClick={() => setIsOpen(true)}
-        >
-          Get a Demo
-        </button>
-      ) : (
-        <Button onClick={() => setIsOpen(true)}>Become a partner</Button>
-      )}
+      <button
+        className={`${styles.button} ${props.isLarge || type === "partner" ? styles.large : ""
+          }`}
+        onClick={() => setIsOpen(true)}
+      >
+        {type === "demo" ? "Get a Demo" : "Become a partner"}
+      </button>
       <Modal isOpen={isOpen} onDismiss={() => setIsOpen(false)}>
         <RequestDemoForm isPartner={type === "partner"} />
       </Modal>

@@ -1,6 +1,6 @@
+import headerImage from "@/assets/fullAttackSurface.svg";
 import SilverskyLogo from "@/assets/silversky.png";
 import { DemoButton } from "@/atoms";
-import { Card } from "@/atoms/Card/Card";
 import { CardsTitle, Feedback, Footer, Header, Report } from "@/sections";
 import { Box, Cloud, Laptop, Radio, Search, Target } from "lucide-react";
 
@@ -12,13 +12,7 @@ export function FullAttackSurface() {
         category="visibility"
         title="Full Attack Surface Visibility"
         subtitle="Leverage our Attack Surface Management (ASM) capabilities to gain unparalleled visibility into your organization's security posture and ensure compliance requirements are always met."
-        sideChildren={
-          <Card
-            title="Learn More"
-            content="Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis."
-            headerPhoto="https://picsum.photos/200/300"
-          />
-        }
+        sideChildren={<img src={headerImage} alt="Header image" />}
       >
         <DemoButton isLarge />
       </Header>

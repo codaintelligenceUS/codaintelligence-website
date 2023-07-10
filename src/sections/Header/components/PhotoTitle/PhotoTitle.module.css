@@ -2,7 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 250px 50px;
+  padding: 100px 50px;
+}
+
+.container img {
+  height: 600px;
 }
 
 .box {

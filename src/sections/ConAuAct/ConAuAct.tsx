@@ -10,9 +10,8 @@ export type ConAuActProps = {
 export function ConAuAct(props: ConAuActProps) {
   return (
     <section
-      className={`${styles.container} ${
-        props.isPinkEndingGradient ? styles.pinkEndingGradient : ""
-      }`}
+      className={`${styles.container} ${props.isPinkEndingGradient ? styles.pinkEndingGradient : ""
+        }`}
     >
       <Title
         category="Why partner with CODA"
@@ -47,7 +46,7 @@ export function ConAuAct(props: ConAuActProps) {
               <li>Blue Team</li>
               <li>Consulting Services</li>
               <li>
-                Automated Remediation <span>(coming up in Q4)</span>
+                Automated Remediation <span>(coming up in Q4 2023)</span>
               </li>
             </ul>
           }

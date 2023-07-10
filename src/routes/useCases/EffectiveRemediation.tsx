@@ -48,6 +48,7 @@ export function EffectiveRemediation() {
       {/* <HowItWorks /> */}
       <Feedback
         isDarkBlue
+        authorPosition="VP of Threat Intelligence, Solutions Granted Inc."
         testimonial="We just love how CODA’s platform allows us to work collaboratively with IT remediation owners to get critical work done. It’s so much faster and we all get that instant gratification of making sure we are working on what’s truly important for the customer"
         authorName="Cory Clark"
         companyLogo={Sgi}

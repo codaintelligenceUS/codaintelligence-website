@@ -50,6 +50,7 @@ export function ContextualPrioritization() {
       <Feedback
         isDarkBlue
         authorName="Steve Sims"
+        authorPosition="CISO GreenCloud Defense, 11:11 Systems"
         testimonial="The automation & threat intelligence CODA brings, allows me to be sure all exploitable attack paths are fixed, before they get exploited by threat actors."
         companyLogo={GreenCloud}
       />

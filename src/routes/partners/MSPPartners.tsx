@@ -135,6 +135,7 @@ Join us as we enable risk-based application and software supply chain security t
         testimonial="One of SAP's new services, RAVEN, which will be launched as a pilot end of 2023, has a component developed with CODA that will allow customers to make decisions with speed and accuracy when it comes to managing risk."
         companyLogo={SAPLogo}
         authorName="Roland Costea"
+        authorPosition="Global Chief Security Officer for SAP's Enterprise Cloud Services"
       />
       <CardsTitle
         fixedHeight

@@ -36,6 +36,19 @@ export function Guides() {
       content:
         "In this article for 11:11 Systems, Brian Knutson writes an overview of managed security systems and their benefits.",
     },
+    {
+      link: "https://www.youtube.com/watch?v=jjLwNHMLfKk",
+      title:
+        "MSSPs: Help Your Customers Maintain Compliance with Vulnerability Monitoring and Training",
+      content:
+        "An online seminar on how MSSPs can help their customers maintain compliance with vulnerability monitoring and training.",
+    },
+    {
+      link: "https://www.youtube.com/watch?v=jjLwNHMLfKk",
+      title: "Prioritizing vulneraiblities in an Ever-Changing Landscape",
+      content:
+        "An online seminar on how MSSPs can help their customers maintain compliance with vulnerability monitoring and training.",
+    },
   ];
 
   return (

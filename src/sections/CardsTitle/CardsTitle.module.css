@@ -44,6 +44,7 @@
 .fixedHeight .cards > * {
   max-width: none;
   height: 100%;
+  max-height: 350px;
 }
 
 @media screen and (max-width: 1700px) {

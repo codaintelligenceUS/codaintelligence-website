@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "..";
 import { Modal } from "../Modal/Modal";
 import { RequestDemoForm } from "../RequestDemoForm/RequestDemoForm";
 import styles from "./DemoButton.module.css";

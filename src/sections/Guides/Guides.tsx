@@ -58,7 +58,7 @@ export function Guides() {
 }
 
 function CustomLink(props: LinkProps) {
-  if (props.to.startsWith("https://")) {
+  if (props.to?.startsWith("https://")) {
     return (
       <a href={props.to} target="_blank" rel="noreferrer">
         {props.children}

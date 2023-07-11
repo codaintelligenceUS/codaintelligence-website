@@ -88,9 +88,9 @@ Join us as we enable risk-based application and software supply chain security t
         title={{
           category: "Power of the platform",
           title:
-            "The first ASM platform specifically designed for Managed Service Providers",
+            "The first ASM platform specifically designed for Service Providers",
           subtitle:
-            "Built from the ground up as a platform for the Managed Service Providers, there are no loose ends on the needs of our partners. True breed of service scalability.",
+            "Built from the ground up as a platform for the Service Providers, there are no loose ends on the needs of our partners. True breed of service scalability.",
         }}
         cards={[
           {

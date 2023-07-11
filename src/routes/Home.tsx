@@ -8,7 +8,6 @@ export function Home() {
       <sections.SOC />
       <sections.AsSeenOn isWhite />
       <sections.API />
-      <sections.BookDemo />
       <sections.Footer />
     </>
   );

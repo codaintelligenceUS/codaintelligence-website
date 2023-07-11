@@ -21,7 +21,7 @@
 
   /* Category Title */
   font-family: Manrope;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 800;
   line-height: 120.6%;
@@ -34,6 +34,7 @@
   color: currentColor;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-transform: uppercase;
 
   /* Category Heading Text */
   font-family: Inter;

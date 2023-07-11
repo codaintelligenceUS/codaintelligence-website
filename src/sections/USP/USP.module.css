@@ -8,7 +8,7 @@
 
 .uspList {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 30px;
@@ -26,10 +26,25 @@
 }
 
 .uspItem h1 {
+  font-size: 18px;
   font-weight: 700;
   margin: 20px 0;
+}
+.uspItem p {
+  opacity: 0.6;
+  transition: 0.4s opacity;
 }
 
 .uspItem img {
   height: 150px;
+  transition: 0.4s all;
+}
+
+.uspItem:hover img {
+  transform: scale(1.1) rotateX(-20deg);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.uspItem:hover p {
+  opacity: 1;
 }

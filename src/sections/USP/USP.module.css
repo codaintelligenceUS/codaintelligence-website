@@ -25,6 +25,11 @@
   text-align: center;
 }
 
+.uspItem h1 {
+  font-weight: 700;
+  margin: 20px 0;
+}
+
 .uspItem img {
   height: 150px;
 }

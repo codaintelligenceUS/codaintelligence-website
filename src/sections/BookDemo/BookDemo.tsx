@@ -4,11 +4,8 @@ import { DemoButton } from "@/atoms";
 export function BookDemo() {
   return (
     <section className={styles.container}>
-      <Title
-        title="Let us show you the power of Footprint."
-        subtitle="Book a demo with us by using the button below."
-      />
-      <DemoButton isLarge />
+      <Title title="Let us show you the power of Footprint." />
+      <DemoButton isLarge buttonText="Free Trial" />
     </section>
   );
 }

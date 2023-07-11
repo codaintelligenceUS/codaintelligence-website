@@ -9,16 +9,17 @@ export function FeatureTitle() {
     <div className={styles.container}>
       <img src={Flare} alt="Flare" className={styles.flare} />
       <div className={styles.text}>
-        <h1>Attack surface management designed for</h1>
+        <h1>Attack Surface Management </h1>
         <div className={styles.subtitle}>
-          <h1 className={styles.you}>your resilience</h1>
+          <h1>for</h1>
+          <h1 className={styles.you}>your cyber resilience</h1>
           <Swooshes />
         </div>
         <p>
-          No one can fix everything that should be. Most of the time, the things
-          that get fixed were not exploitable in the first place. Filter out the
-          noise and focus on what really matters. Our leading exploit mitigation
-          system helps you keep your services running 24/7.{" "}
+          No one can fix everything that should be fixed. Most of the time, the
+          things that get fixed were not exploitable in the first place. Filter
+          out the noise and focus on what really matters. Our leading exploit
+          mitigation system helps you keep your services running securely 24/7.
         </p>
       </div>
       <DemoButton isLarge />

@@ -91,7 +91,7 @@ function MobileMenu() {
             <li>
               <Link to={PAGES.mspPartners}>
                 <BrainCog />
-                Managed Service Providers
+                Service Providers
               </Link>
             </li>
           </ul>
@@ -99,7 +99,7 @@ function MobileMenu() {
         <li>
           <Link to={PAGES.resources}>
             <Book />
-            Guide
+            Resources
           </Link>
         </li>
         <li>
@@ -115,7 +115,7 @@ function MobileMenu() {
           </a>
         </li>
         <li>
-          <DemoButton />
+          <DemoButton buttonText="Free trial" />
         </li>
       </ul>
     </div>
@@ -126,9 +126,10 @@ function LeftOptions() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
+        <NavigationEntry title="Home" href={PAGES.home} />
         <NavigationEntry
           title="Platform"
-          cardTitle="Your dedicated attack surface management platform"
+          cardTitle="Your AI-driven attack surface management platform"
           cardDescription="Specifically built for exploit mitigation"
           links={[
             {
@@ -159,13 +160,13 @@ function LeftOptions() {
               description: "Explore integrations",
             },
             {
-              title: "Managed Service Providers",
+              title: "Service Providers",
               href: PAGES.mspPartners,
               description: "Become a CODA Partner",
             },
           ]}
         />
-        <NavigationEntry title="Guide" href={PAGES.resources} />
+        <NavigationEntry title="Resources" href={PAGES.resources} />
         <NavigationEntry title="Company" href={PAGES.company} />
       </NavigationMenuList>
     </NavigationMenu>

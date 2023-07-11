@@ -55,10 +55,10 @@ export function FullAttackSurface() {
       {/* <HowItWorks /> */}
       <Feedback
         isDarkBlue
-        authorPosition="Pending partner release"
+        authorPosition="President of Silversky"
         testimonial="When we look for service partners in the market, their solution must be best a breed and easy to consume for our customers and channel partners. We have over 25 years of securing our customers and this is a significant upgrade to our current vulnerability management offering."
-        authorName=""
-        companyLogo={""}
+        authorName="Cary Conrad"
+        companyLogo={SilverskyLogo}
       />
       <Report downloadUrl="#" />
       <Footer />

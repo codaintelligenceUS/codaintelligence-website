@@ -14,8 +14,10 @@ export function Footer() {
         <Logo />
         <LinkGroup
           title="Company"
-          links={[{ title: "Resources", href: PAGES.resources }]}
-          links={[{ title: "About us", href: PAGES.company }]}
+          links={[
+            { title: "Resources", href: PAGES.resources },
+            { title: "About us", href: PAGES.company },
+          ]}
         />
         <LinkGroup
           title="Platform"

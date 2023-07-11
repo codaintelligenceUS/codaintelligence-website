@@ -18,8 +18,14 @@ export function MainRouter() {
     window.scrollTo(0, 0);
   }, [location]);
 
+  const baseUrl =
+    window.location.host.includes("github.io") ||
+      window.location.host.includes("localhost")
+      ? "/codaintelligence-website/"
+      : "/";
+
   return (
-    <Router base={import.meta.env.BASE_URL}>
+    <Router base={baseUrl}>
       <Switch>
         <Route path={PAGES.company}>
           <Company />

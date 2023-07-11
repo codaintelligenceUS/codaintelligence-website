@@ -5,7 +5,7 @@ export function BookDemo() {
   return (
     <section className={styles.container}>
       <Title title="Let us show you the power of Footprint." />
-      <DemoButton isLarge buttonText="Free Trial" />
+      <DemoButton isLarge type="freeTrial" />
     </section>
   );
 }

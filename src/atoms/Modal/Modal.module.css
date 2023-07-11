@@ -19,6 +19,17 @@
   border-radius: 20px;
   background-color: white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 60vw;
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.container > div:not(.closeButton) {
+  width: 100%;
 }
 
 .closeButton {
@@ -38,4 +49,11 @@
 
 .closeButton svg:hover {
   transform: rotate(180deg) scale(1.2);
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 90vw;
+    max-height: 90vh;
+  }
 }

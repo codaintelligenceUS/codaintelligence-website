@@ -1,6 +1,6 @@
 import { Title } from "@/atoms/Title/Title";
 import styles from "./Career.module.css";
-import { Button } from "@/atoms";
+import { Button, DemoButton } from "@/atoms";
 
 export function Career() {
   return (
@@ -10,7 +10,7 @@ export function Career() {
         title="Join the CODA Team"
         subtitle="Use the button below to apply"
       >
-        <Button>Apply now</Button>
+        <DemoButton isRegularButton type="careers" />
       </Title>
     </section>
   );

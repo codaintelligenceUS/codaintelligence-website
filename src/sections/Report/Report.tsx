@@ -1,7 +1,7 @@
 import styles from "./Report.module.css";
 import Icon from "./Icon.png";
 import { Title } from "@/atoms/Title/Title";
-import { Button } from "@/atoms";
+import { DemoButton } from "@/atoms";
 
 export type ReportProps = {
   title?: string;
@@ -22,9 +22,7 @@ export function Report(props: ReportProps) {
           "Footprint brings unparalleled automation into reporting"
         }
       >
-        <a href={props.downloadUrl} target="_blank" rel="noreferrer">
-          <Button>Download the report</Button>
-        </a>
+        <DemoButton isRegularButton type="getReport" />
       </Title>
     </section>
   );

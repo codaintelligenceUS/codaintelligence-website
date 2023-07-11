@@ -16,7 +16,7 @@
   color: #333;
 }
 
-.container h3 {
+.container .category {
   color: #ec1c5b;
 
   /* Category Title */
@@ -30,7 +30,7 @@
   margin-bottom: 10px;
 }
 
-.container h1 {
+.container .mainTitle {
   color: currentColor;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -46,7 +46,7 @@
   margin-bottom: 10px;
 }
 
-.container h2 {
+.container .subtitle {
   color: currentColor;
   font-family: Inter;
   font-size: 16px;
@@ -58,7 +58,7 @@
   white-space: pre-wrap;
 }
 
-.container h2:not(:last-child) {
+.container > h2:not(:last-child) {
   margin-bottom: 20px;
 }
 

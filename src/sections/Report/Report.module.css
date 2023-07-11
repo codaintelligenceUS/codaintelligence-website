@@ -1,10 +1,16 @@
 .container {
   background: linear-gradient(180deg, #1a1f5f 0.99%, #0f153c 100%);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  text-align: left;
   justify-content: center;
   padding: 50px;
   gap: 50px;
+}
+
+.container > h1,
+.container > h2 {
+  text-align: left !important;
 }
 
 .container img {

@@ -18,13 +18,12 @@ export type TitleProps = {
 export function Title(props: TitleProps) {
   return (
     <div
-      className={`${styles.container} ${props.isDark ? styles.dark : ""} ${
-        props.isLeftAligned ? styles.leftAligned : ""
-      }`}
+      className={`${styles.container} ${props.isDark ? styles.dark : ""} ${props.isLeftAligned ? styles.leftAligned : ""
+        }`}
     >
-      {props.category && <h3>{props.category}</h3>}
-      {props.title && <h1>{props.title}</h1>}
-      {props.subtitle && <h2>{props.subtitle}</h2>}
+      {props.category && <h3 className={styles.category}>{props.category}</h3>}
+      {props.title && <h1 className={styles.mainTitle}>{props.title}</h1>}
+      {props.subtitle && <h2 className={styles.subtitle}>{props.subtitle}</h2>}
       {props.children}
     </div>
   );

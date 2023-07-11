@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import { useHubspotSubmit } from "@/utils/hubspot";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { CheckCircle } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useId, useMemo, useState } from "react";
 import { Control, useForm } from "react-hook-form";
 import * as z from "zod";
 import { Button } from "..";
@@ -25,100 +25,52 @@ const formSchema = z.object({
   where_did_you_hear_about_us_: z.string(),
 });
 
-export function RequestDemoForm(props: { isPartner?: boolean }) {
-  const [isFilled, setIsFilled] = useState(false);
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-  });
-  const { handleSubmit } = useHubspotSubmit({
-    formId: "44a593b8-9f80-4be4-849e-f2fdb34b5e6b",
-    portalId: "8924509",
-  });
+export function RequestDemoForm(props: {
+  formType?: "partner" | "demo" | "careers" | "freeTrial" | "getReport";
+}) {
+  const rawId = useId();
+  const id = rawId.replace(":", "").replace(":", "");
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsFilled(true);
-    await handleSubmit(values);
-  }
+  const forms: { [key in NonNullable<typeof props.formType>]: string } =
+    useMemo(
+      () => ({
+        partner: "51e03d49-8121-4577-bf5d-a9d3a6a9333a",
+        demo: "44a593b8-9f80-4be4-849e-f2fdb34b5e6b",
+        careers: "4a170863-17d6-45c6-b3bb-f1ebdef1d6f2",
+        freeTrial: "6402bb1b-0b02-4dfc-8cdd-cf752eb7a5ed",
+        getReport: "4a170863-17d6-45c6-b3bb-f1ebdef1d6f2",
+      }),
+      []
+    );
+
+  useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    if (window.hbspt) {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
+      window.hbspt.forms.create({
+        portalId: "8924509",
+        formId: forms[props.formType || "demo"],
+        target: `#hubspotForm${id}`,
+      });
+    }
+  }, [forms, id, props.formType]);
 
   return (
     <div className={`${styles.container}`}>
-      {isFilled ? (
-        <div className={styles.filled}>
-          <CheckCircle />
-          <h1>Thank you!</h1>
-          <h2>We will be in contact shortly.</h2>
-        </div>
-      ) : (
-        <>
-          <h1>
-            {props.isPartner
-              ? "Become a CODA Partner"
-              : "Request a Footprint demo"}
-          </h1>
-          <h2>
-            {props.isPartner
-              ? "Fill out the form below to become a partner"
-              : "Fill out the form below to request a demo"}
-          </h2>
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)}>
-              <div className={styles.fields}>
-                <Field
-                  fieldName="firstname"
-                  name="First Name"
-                  control={form.control}
-                />
-                <Field
-                  fieldName="lastname"
-                  name="Last Name"
-                  control={form.control}
-                />
-                <Field fieldName="email" name="E-mail" control={form.control} />
-                <Field
-                  fieldName="company"
-                  name="Company"
-                  control={form.control}
-                />
-                <Field
-                  fieldName="jobtitle"
-                  name="Job Title"
-                  control={form.control}
-                />
-              </div>
-              <div className={styles.bottomFields}>
-                <Field
-                  fieldName="where_did_you_hear_about_us_"
-                  name="Where did you hear about us ?"
-                  control={form.control}
-                />
-                <Button type="submit">Submit</Button>
-              </div>
-            </form>
-          </Form>
-        </>
-      )}
+      <h1>
+        {props.formType === "partner"
+          ? "Become a CODA Partner"
+          : "Request a Footprint demo"}
+      </h1>
+      <h2>
+        {props.formType === "partner"
+          ? "Fill out the form below to become a partner"
+          : "Fill out the form below to request a demo"}
+      </h2>
+      <div id={`hubspotForm${id}`}></div>
     </div>
-  );
-}
-
-function Field(props: {
-  name: string;
-  fieldName: keyof z.infer<typeof formSchema>;
-  control: Control<z.infer<typeof formSchema>>;
-}) {
-  return (
-    <FormField
-      control={props.control}
-      name={props.fieldName}
-      render={({ field }) => (
-        <FormItem>
-          <FormLabel>{props.name}</FormLabel>
-          <FormControl>
-            <Input {...field} />
-          </FormControl>
-          <FormMessage />
-        </FormItem>
-      )}
-    />
   );
 }

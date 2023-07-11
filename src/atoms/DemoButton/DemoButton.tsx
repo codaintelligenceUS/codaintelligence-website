@@ -8,6 +8,7 @@ import styles from "./DemoButton.module.css";
 export function DemoButton(props: {
   isLarge?: boolean;
   type?: "partner" | "demo";
+  buttonText?: string;
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const type = props.type ?? "demo";
@@ -15,11 +16,16 @@ export function DemoButton(props: {
   return (
     <>
       <button
-        className={`${styles.button} ${props.isLarge || type === "partner" ? styles.large : ""
-          }`}
+        className={`${styles.button} ${
+          props.isLarge || type === "partner" ? styles.large : ""
+        }`}
         onClick={() => setIsOpen(true)}
       >
-        {type === "demo" ? "Get a Demo" : "Become a partner"}
+        {props.buttonText
+          ? props.buttonText
+          : type === "demo"
+          ? "Get a Demo"
+          : "Become a partner"}
       </button>
       <Modal isOpen={isOpen} onDismiss={() => setIsOpen(false)}>
         <RequestDemoForm isPartner={type === "partner"} />

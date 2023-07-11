@@ -34,17 +34,17 @@
 
 .fixedHeight .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .largeGrid.fixedHeight .cards {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .fixedHeight .cards > * {
   max-width: none;
   height: 100%;
-  max-height: 350px;
+  max-height: 650px;
 }
 
 @media screen and (max-width: 1700px) {

@@ -3,7 +3,7 @@ import {
   NavigationMenu,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
+import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import { PAGES } from "@/variables";
 import {
   BarChart3,
@@ -178,7 +178,13 @@ function RightOptions() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-       <NavigationEntry title="Partner Login" href="https://support.codaintelligence.com" />
+        <a
+          className={`${styles.navItem} ${navigationMenuTriggerStyle()}`}
+          href="https://support.codaintelligence.com"
+          target="_blank"
+        >
+          Partner login
+        </a>
         <DemoButton />
       </NavigationMenuList>
     </NavigationMenu>

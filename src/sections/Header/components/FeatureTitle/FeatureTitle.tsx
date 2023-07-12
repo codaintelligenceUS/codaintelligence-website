@@ -7,7 +7,7 @@ import Video from "./IntroMovie.mp4";
 export function FeatureTitle() {
   return (
     <div className={styles.container}>
-      <div className={styles.flare} />
+      <img src={Flare} alt="Flare" className={styles.flare} />
       <div className={styles.text}>
         <h1>Attack Surface Management </h1>
         <div className={styles.subtitle}>

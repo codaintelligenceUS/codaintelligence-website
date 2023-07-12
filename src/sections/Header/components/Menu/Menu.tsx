@@ -116,7 +116,7 @@ function MobileMenu() {
           </a>
         </li>
         <li>
-          <DemoButton buttonText="Free trial" />
+          <DemoButton />
         </li>
       </ul>
     </div>

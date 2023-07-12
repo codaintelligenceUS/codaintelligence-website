@@ -63,8 +63,8 @@ export function RequestDemoForm(props: RequestDemoFormProps) {
 
   return (
     <div className={`${styles.container}`}>
-      <h1>{titles[type].title}</h1>
-      <h2>{titles[type].subtitle}</h2>
+      <h1 className={styles.title}>{titles[type].title}</h1>
+      <h2 className={styles.subtitle}>{titles[type].subtitle}</h2>
       <div id={`hubspotForm${id}`}></div>
     </div>
   );

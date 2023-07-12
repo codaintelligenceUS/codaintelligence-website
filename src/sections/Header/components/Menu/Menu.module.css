@@ -64,6 +64,19 @@
   margin-bottom: 10px;
 }
 
+.mobileMenuBackdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 0vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
 .mobileMenuContainer.open .mobileMenuIcon {
   transform: rotate(90deg);
 }
@@ -83,9 +96,16 @@
   padding: 0;
 }
 
-.mobileMenuContainer.open > ul {
+.mobileMenuContainer.open .mobileMenuBackdrop > ul {
+  width: 300px;
   max-height: 600px;
   padding: 5px 10px;
+}
+
+.mobileMenuContainer.open .mobileMenuBackdrop {
+  height: 100vh;
+  padding: 60px;
+  box-sizing: border-box;
 }
 
 .mobileMenuContainer ul li svg {

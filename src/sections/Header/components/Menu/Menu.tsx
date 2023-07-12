@@ -14,6 +14,7 @@ import {
   GitBranch,
   MenuIcon,
   Radar,
+  Home,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
@@ -56,69 +57,83 @@ function MobileMenu() {
       <div className={styles.mobileMenuIcon} onClick={() => setIsOpen(!isOpen)}>
         <MenuIcon />
       </div>
-      <ul>
-        <li>
-          Platform
-          <ul>
-            <li>
-              <Link to={PAGES.fullAttackSurface}>
-                <Radar />
-                Full Attack Surface Visibility
-              </Link>
-            </li>
-            <li>
-              <Link to={PAGES.contextualPrioritization}>
-                <BarChart3 />
-                Contextual Prioritization
-              </Link>
-            </li>
-            <li>
-              <Link to={PAGES.effectiveRemediation}>
-                <GitBranch />
-                Effective Remediation
-              </Link>
-            </li>
-          </ul>
-        </li>
-        <li>
-          Partners
-          <ul>
-            <li>
-              <Link to={PAGES.technologyPartners}>
-                <Cog />
-                Technology Partners
-              </Link>
-            </li>
-            <li>
-              <Link to={PAGES.mspPartners}>
-                <BrainCog />
-                Service Providers
-              </Link>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <Link to={PAGES.resources}>
-            <Book />
-            Resources
-          </Link>
-        </li>
-        <li>
-          <Link to={PAGES.company}>
-            <Building />
-            Company
-          </Link>
-        </li>
-        <hr />
-        <li>
-          <a href="https://support.codaintelligence.com" target="_blank">
-            Partner Login
-          </a>
-        </li>
-        <li>
-          <DemoButton />
-        </li>
-      </ul>
+      <div
+        className={styles.mobileMenuBackdrop}
+        onClick={(e) => {
+          e.stopPropagation();
+          setIsOpen(false);
+        }}
+      >
+        <ul>
+          <li>
+            <Link to={PAGES.home}>
+              <Home />
+              Home
+            </Link>
+          </li>
+          <li>
+            Platform
+            <ul>
+              <li>
+                <Link to={PAGES.fullAttackSurface}>
+                  <Radar />
+                  Full Attack Surface Visibility
+                </Link>
+              </li>
+              <li>
+                <Link to={PAGES.contextualPrioritization}>
+                  <BarChart3 />
+                  Contextual Prioritization
+                </Link>
+              </li>
+              <li>
+                <Link to={PAGES.effectiveRemediation}>
+                  <GitBranch />
+                  Effective Remediation
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Partners
+            <ul>
+              <li>
+                <Link to={PAGES.technologyPartners}>
+                  <Cog />
+                  Technology Partners
+                </Link>
+              </li>
+              <li>
+                <Link to={PAGES.mspPartners}>
+                  <BrainCog />
+                  Service Providers
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Link to={PAGES.resources}>
+              <Book />
+              Resources
+            </Link>
+          </li>
+          <li>
+            <Link to={PAGES.company}>
+              <Building />
+              Company
+            </Link>
+          </li>
+          <hr />
+          <li>
+            <a href="https://support.codaintelligence.com" target="_blank">
+              Partner Login
+            </a>
+          </li>
+          <li>
+            <DemoButton />
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

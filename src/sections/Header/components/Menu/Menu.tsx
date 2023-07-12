@@ -178,10 +178,7 @@ function RightOptions() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-       
-<a href="https://support.codaintelligence.com" target="_blank" className={navigationMenuTriggerStyle()}>
-            Partner Login
-          </a>
+       <NavigationEntry title="Partner Login" href="https://support.codaintelligence.com" />
         <DemoButton />
       </NavigationMenuList>
     </NavigationMenu>

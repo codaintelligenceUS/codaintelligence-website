@@ -13,6 +13,12 @@ export function Guides() {
       link: PAGES.partnerEnablement,
     },
     {
+      title: "Silversky announces CODA partnership",
+      content:
+        "CODA and Silversky announce a partnership to accelerate the growth of their business",
+      link: "https://www.linkedin.com/posts/silversky_codaintelligence-christiansandescu-ceo-activity-7084535345735692289-22JA/?utm_source=share&utm_medium=member_desktop",
+    },
+    {
       link: "https://www.youtube.com/watch?v=_AwGvZLWLjY",
       title: "Chris Sandescu, CODA CEO, on EPIC STARTS Podcast",
       content:

@@ -8,8 +8,8 @@ import ViteWebp from "vite-plugin-webp-generator";
 export default defineConfig({
   plugins: [
     react(),
+    (ViteWebp as any).default({ extensions: ["png", "jpg"] }),
     ViteImageOptimizer(),
-    ViteWebp({ extensions: ["png", "jpg"] }),
   ],
   resolve: {
     alias: {

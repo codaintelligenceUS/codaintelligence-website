@@ -2,7 +2,13 @@ import { useEffect, useId, useMemo } from "react";
 import styles from "./RequestDemoForm.module.css";
 
 export type RequestDemoFormProps = {
-  formType?: "partner" | "demo" | "careers" | "freeTrial" | "getReport";
+  formType?:
+    | "partner"
+    | "demo"
+    | "careers"
+    | "freeTrial"
+    | "getReport"
+    | "contact";
 };
 export function RequestDemoForm(props: RequestDemoFormProps) {
   const rawId = useId();
@@ -17,6 +23,7 @@ export function RequestDemoForm(props: RequestDemoFormProps) {
         careers: "4a170863-17d6-45c6-b3bb-f1ebdef1d6f2",
         freeTrial: "6402bb1b-0b02-4dfc-8cdd-cf752eb7a5ed",
         getReport: "537c1abe-88d1-446c-875b-69f24f14838b",
+        contact: "75d6de71-f751-4f54-816c-6ae998caed6d",
       }),
       []
     );
@@ -42,6 +49,10 @@ export function RequestDemoForm(props: RequestDemoFormProps) {
     },
     getReport: {
       title: "Get a sample report",
+      subtitle: "Fill in the form below",
+    },
+    contact: {
+      title: "Contact us",
       subtitle: "Fill in the form below",
     },
   };

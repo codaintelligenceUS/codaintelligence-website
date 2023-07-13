@@ -26,10 +26,12 @@ export function DemoButton(props: {
     careers: "Join us",
     freeTrial: "Free Trial",
     getReport: "Get a sample report",
+    contact: "Contact us",
   };
 
-  const className = `${styles.button} ${props.isLarge || type === "partner" ? styles.large : ""
-    }`;
+  const className = `${styles.button} ${
+    props.isLarge || type === "partner" ? styles.large : ""
+  }`;
 
   const buttonText = props.buttonText ? props.buttonText : buttonTexts[type];
 

@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/navigation-menu";
 
 import styles from "./Menu.module.css";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 
 type EntryLink = { title: string; href: string; description: string };
 
@@ -35,10 +35,20 @@ export type NavigationEntryProps = {
  * Displays a list of options that can be selected on hover.
  */
 export function NavigationEntry(props: NavigationEntryProps) {
+  const [location] = useLocation();
+  const isActive =
+    props.title === "Home"
+      ? location === "/"
+      : "href" in props
+      ? location.includes(props.href)
+      : props.links.some((link) => location.includes(link.href));
+
   if ("href" in props) {
     return (
       <NavigationMenuItem
-        className={`${styles.navItem} ${navigationMenuTriggerStyle()}`}
+        className={`${styles.navItem} ${
+          isActive ? styles.active : ""
+        } ${navigationMenuTriggerStyle()}`}
       >
         <Link to={props.href}>
           <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -51,7 +61,11 @@ export function NavigationEntry(props: NavigationEntryProps) {
 
   return (
     <NavigationMenuItem>
-      <NavigationMenuTrigger className={styles.navItem}>
+      <NavigationMenuTrigger
+        className={` ${isActive ? styles.active : ""} ${styles.navItem} ${
+          styles.navItem
+        }`}
+      >
         {props.title}
       </NavigationMenuTrigger>
       <NavigationMenuContent>

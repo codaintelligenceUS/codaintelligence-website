@@ -48,6 +48,7 @@
     "typescript-plugin-css-modules": "^5.0.1",
     "vite": "^4.4.0",
     "vite-plugin-image-optimizer": "^1.1.6",
+    "vite-plugin-webfont-dl": "^3.7.6",
     "vite-plugin-webp-generator": "^0.0.5"
   }
 }

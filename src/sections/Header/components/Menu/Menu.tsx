@@ -198,7 +198,7 @@ function RightOptions() {
           href="https://support.codaintelligence.com"
           target="_blank"
         >
-          Partner login
+          Partner Login
         </a>
         <DemoButton />
       </NavigationMenuList>

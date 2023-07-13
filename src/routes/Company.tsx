@@ -1,6 +1,8 @@
 import { Header, Mission, Career, Footer, AsSeenOn } from "@/sections";
+import { useTitle } from "@/utils/useTitle";
 
 export function Company() {
+  useTitle("Company");
   return (
     <>
       <Header

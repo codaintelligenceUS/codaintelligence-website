@@ -2,6 +2,7 @@ import PartnerEnablementPhoto from "@/assets/partnerEnablement.webp";
 import { DemoButton } from "@/atoms";
 import { RequestDemoForm } from "@/atoms/RequestDemoForm/RequestDemoForm";
 import { CardsTitle, Footer, Header, TitleAndContent } from "@/sections";
+import { useTitle } from "@/utils/useTitle";
 import {
   BarChart2,
   BrainCog,
@@ -14,6 +15,7 @@ import {
 } from "lucide-react";
 
 export function PartnerEnablement() {
+  useTitle("Partner Enablement");
   return (
     <>
       <Header

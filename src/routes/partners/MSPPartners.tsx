@@ -9,8 +9,10 @@ import IIII from "@/assets/1111.png";
 import Blokworkx from "@/assets/blokworkx.png";
 import Defensestorm from "@/assets/defensestorm.png";
 import Dod from "@/assets/dodsecurity.png";
+import { useTitle } from "@/utils/useTitle";
 
 export function MSPPartners() {
+  useTitle("Service Providers");
   const partners = [
     {
       icon: Silversky,

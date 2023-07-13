@@ -1,7 +1,9 @@
 import { Footer, Header } from "@/sections";
 import { Integrations } from "@/sections/Integrations/Integrations";
+import { useTitle } from "@/utils/useTitle";
 
 export function TechPartners() {
+  useTitle("Technology Partners");
   return (
     <>
       <Header

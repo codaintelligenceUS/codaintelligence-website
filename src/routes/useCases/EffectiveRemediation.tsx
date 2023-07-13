@@ -2,9 +2,11 @@ import headerImage from "@/assets/effectiveRemediation.svg";
 import Sgi from "@/assets/sgi.png";
 import { DemoButton } from "@/atoms";
 import { CardsTitle, Feedback, Footer, Header, Report } from "@/sections";
+import { useTitle } from "@/utils/useTitle";
 import { Brain, TrendingUp, Wrench } from "lucide-react";
 
 export function EffectiveRemediation() {
+  useTitle("Effective Remediation");
   return (
     <>
       <Header

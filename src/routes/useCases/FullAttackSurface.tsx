@@ -2,9 +2,11 @@ import headerImage from "@/assets/fullAttackSurface.svg";
 import SilverskyLogo from "@/assets/silversky.png";
 import { DemoButton } from "@/atoms";
 import { CardsTitle, Feedback, Footer, Header, Report } from "@/sections";
+import { useTitle } from "@/utils/useTitle";
 import { Box, Cloud, Laptop, Radio, Search, Target } from "lucide-react";
 
 export function FullAttackSurface() {
+  useTitle("Full Attack Surface");
   return (
     <>
       <Header

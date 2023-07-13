@@ -2,9 +2,11 @@ import headerImage from "@/assets/contextualPrioritization.svg";
 import GreenCloud from "@/assets/greencloud.png";
 import { DemoButton } from "@/atoms";
 import { CardsTitle, Feedback, Footer, Header, Report } from "@/sections";
+import { useTitle } from "@/utils/useTitle";
 import { Activity, GitBranch, Zap } from "lucide-react";
 
 export function ContextualPrioritization() {
+  useTitle("Contextual Prioritization");
   return (
     <>
       <Header

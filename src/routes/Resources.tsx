@@ -1,6 +1,8 @@
 import { Footer, Guides, Header } from "@/sections";
+import { useTitle } from "@/utils/useTitle";
 
 export function Resources() {
+  useTitle("Resources");
   return (
     <>
       <Header

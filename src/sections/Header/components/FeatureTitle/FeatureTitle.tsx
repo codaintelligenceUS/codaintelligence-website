@@ -3,11 +3,12 @@ import styles from "./FeatureTitle.module.css";
 import Flare from "./Flare.png";
 import ScreenshotImage from "./Screenshot.png";
 import Video from "./IntroMovie.mp4";
+import Thumbnail from "./thumbnail.png";
 
 export function FeatureTitle() {
   return (
     <div className={styles.container}>
-      <img src={Flare} alt="Flare" className={styles.flare} />
+      <div className={styles.flare} />
       <div className={styles.text}>
         <h1>Attack Surface Management </h1>
         <div className={styles.subtitle}>
@@ -31,7 +32,7 @@ export function FeatureTitle() {
 function Screenshot() {
   return (
     <div className={styles.screenshot}>
-      <video src={Video} controls />
+      <video src={Video} controls poster={Thumbnail} />
       <img src={ScreenshotImage} alt="Screenshot" />
     </div>
   );

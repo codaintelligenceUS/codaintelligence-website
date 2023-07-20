@@ -19,6 +19,11 @@ export function Guides() {
       link: "https://www.linkedin.com/posts/silversky_codaintelligence-christiansandescu-ceo-activity-7084535345735692289-22JA/?utm_source=share&utm_medium=member_desktop",
     },
     {
+      title: "CyberSecurity Maturity of Credit Unions Panel Discussion with SilverSky",
+      link: "https://youtu.be/8G32OYQY6bo",
+      content: "Join our CEO Chris and the Silversky team on this interesting talk regarding the security challenges of credit unions"
+    },
+    {
       link: "https://www.youtube.com/watch?v=_AwGvZLWLjY",
       title: "Chris Sandescu, CODA CEO, on EPIC STARTS Podcast",
       content:

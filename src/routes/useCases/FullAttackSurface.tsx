@@ -24,7 +24,7 @@ export function FullAttackSurface() {
           category: "Why Footprint",
           title: "Bring confidence in knowing exactly what you are protecting",
           subtitle:
-            "Get unparalleled visibility across all on-premises & cloud workloads, internal & external views and agentless & agent-based.",
+            "Get unparalleled visibility across all on-premises & cloud workloads, internal & external views and agentless & agent-based. All specifically designed and budgeted to optimize your service delivery.",
         }}
         cards={[
           {

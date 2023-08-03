@@ -3,7 +3,7 @@ import GreenCloud from "@/assets/greencloud.png";
 import { DemoButton } from "@/atoms";
 import { CardsTitle, Feedback, Footer, Header, Report } from "@/sections";
 import { useTitle } from "@/utils/useTitle";
-import { Activity, GitBranch, Zap } from "lucide-react";
+import { Activity, DollarSign, GitBranch, Zap } from "lucide-react";
 
 export function ContextualPrioritization() {
   useTitle("Contextual Prioritization");
@@ -46,6 +46,12 @@ export function ContextualPrioritization() {
             title: "Manage risk",
             content:
               "Leverage AI-assisted business impact assessments to transform technology risk into business risk with more than 30 temporal & environmental data points for each attack vector.",
+          },
+          {
+            icon: <DollarSign />,
+            title: "Sustainable and affordable service delivery model",
+            content:
+              "All specifically designed and budgeted to optimize your service delivery.",
           },
         ]}
       />

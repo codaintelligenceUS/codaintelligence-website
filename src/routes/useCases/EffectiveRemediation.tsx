@@ -3,7 +3,7 @@ import Sgi from "@/assets/sgi.png";
 import { DemoButton } from "@/atoms";
 import { CardsTitle, Feedback, Footer, Header, Report } from "@/sections";
 import { useTitle } from "@/utils/useTitle";
-import { Brain, TrendingUp, Wrench } from "lucide-react";
+import { Brain, DollarSign, TrendingUp, Wrench } from "lucide-react";
 
 export function EffectiveRemediation() {
   useTitle("Effective Remediation");
@@ -44,6 +44,12 @@ export function EffectiveRemediation() {
             title: "Showcase your progress",
             content:
               "Reduce your MTTR (mean time to remediate) by neutralizing exploitable attack vectors first. Track your progress over time with delta reports.",
+          },
+          {
+            icon: <DollarSign />,
+            title: "Sustainable and affordable service delivery model",
+            content:
+              "All specifically designed and budgeted to optimize your service delivery.",
           },
         ]}
       />

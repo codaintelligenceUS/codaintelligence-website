@@ -20,7 +20,8 @@ export function FeatureTitle() {
           No one can fix everything that should be fixed. Most of the time, the
           things that get fixed were not exploitable in the first place. Filter
           out the noise and focus on what really matters. Our leading exploit
-          mitigation system helps you keep your services running securely 24/7.
+          mitigation system helps you keep your services running securely and
+          affordably 24/7.
         </p>
       </div>
       <DemoButton isLarge />

@@ -40,14 +40,14 @@ export function MSPPartners() {
       partnerName: "11:11 Systems",
       partnerDescription:
         "11:11 Systems is an IT services company that provides managed infrastructure solutions for cloud, network, and security. The company serves various sectors, such as financial services, healthcare, education, telecommunications, and government municipalities",
-      websiteUrl: "https://11-11systems.com/",
+      websiteUrl: "https://1111systems.com/",
     },
     {
       icon: Blokworkx,
       partnerName: "Blokworkx",
       partnerDescription:
         "BLOKWORX is an award-winning North American Managed Security Service Provider designed to meet the needs of Small and Medium sized business. Their managed security solutions include edge, cloud, endpoint as well as compliance and VCISO solutions.",
-      websiteUrl: "https://blokworkx.com/",
+      websiteUrl: "https://www.blokworx.com/",
     },
     {
       icon: Dod,

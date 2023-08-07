@@ -9,4 +9,5 @@ export const PAGES = {
   effectiveRemediation: "effectiveRemediation/",
   fullAttackSurface: "fullAttackSurface/",
   partnerEnablement: "partnerEnablement/",
+  terms: "terms/",
 };

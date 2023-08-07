@@ -10,6 +10,7 @@ import { TechPartners } from "./partners/TechPartners";
 import { ContextualPrioritization } from "./useCases/ContextualPrioritization";
 import { EffectiveRemediation } from "./useCases/EffectiveRemediation";
 import { FullAttackSurface } from "./useCases/FullAttackSurface";
+import { Terms } from "./Terms";
 
 export function MainRouter() {
   const [location] = useLocation();
@@ -50,6 +51,9 @@ export function MainRouter() {
         </Route>
         <Route path={PAGES.partnerEnablement}>
           <PartnerEnablement />
+        </Route>
+        <Route path={PAGES.terms}>
+          <Terms />
         </Route>
         <Route>
           <Home />

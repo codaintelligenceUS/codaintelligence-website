@@ -4,7 +4,7 @@ import { useTitle } from "@/utils/useTitle";
 import CODATOS from "@/assets/CODA-TOS-v1.2.pdf";
 import CODADPA from "@/assets/CODA-DPA.pdf";
 import CODASLA from "@/assets/CODA-SLA.pdf";
-import CODASPAR from "@/assets/CODA-SPA-Reference-v1.2.pdf";
+import CODASPAR from "@/assets/CODA-SPARA-v1.4.pdf";
 import CODAMAP from "@/assets/210825-CODA-MAP-Policy-V1.1.pdf";
 
 export function Terms() {

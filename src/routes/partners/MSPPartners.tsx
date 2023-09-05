@@ -126,7 +126,7 @@ Join us as we enable risk-based application and software supply chain security t
               <ul>
                 <li>Embedded Threat Intelligence - EVE, Cortex</li>
                 <li>Automated Exploit Validation - CRSS</li>
-                <li>Collaborative REmediation</li>
+                <li>Collaborative Remediation</li>
               </ul>
             ),
           },

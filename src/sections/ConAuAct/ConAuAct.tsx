@@ -10,8 +10,9 @@ export type ConAuActProps = {
 export function ConAuAct(props: ConAuActProps) {
   return (
     <section
-      className={`${styles.container} ${props.isPinkEndingGradient ? styles.pinkEndingGradient : ""
-        }`}
+      className={`${styles.container} ${
+        props.isPinkEndingGradient ? styles.pinkEndingGradient : ""
+      }`}
     >
       <Title
         category="Why partner with CODA"
@@ -57,13 +58,15 @@ export function ConAuAct(props: ConAuActProps) {
           title="50-90% cost reduction"
           content={
             <ul>
-              <li>Channel Only</li>
-              <li>Co-branded, fully customizable</li>
-              <li>SaaS pay per use</li>
-              <li>Strong partner enablement</li>
-              <li>Presales accelerators built-in</li>
-              <li>Open Data - fully documented APIs</li>
-              <li>MSSP Integrations (MFA/IDP, PSA, SIEM, SOAR, etc.)</li>
+              <li>Automated continuous vulnerability & security validation</li>
+              <li>AI-assisted remediation & hardening</li>
+              <li>SaaS, Pay as you grow, only for live assets</li>
+              <li>Business & Threat Intelligence driven risk prioritization</li>
+              <li>
+                Increase ROI & maximise current investments with our pre-built
+                integrations
+              </li>
+              <li>Reduce SOC noise with our zero-day exploit intelligence</li>
             </ul>
           }
         />

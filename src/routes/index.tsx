@@ -4,13 +4,14 @@ import { Route, Router, Switch, useLocation } from "wouter";
 import { Company } from "./Company";
 import { Home } from "./Home";
 import { PartnerEnablement } from "./PartnerEnablement";
+import { Privacy } from "./Privacy";
 import { Resources } from "./Resources";
+import { Terms } from "./Terms";
 import { MSPPartners } from "./partners/MSPPartners";
 import { TechPartners } from "./partners/TechPartners";
 import { ContextualPrioritization } from "./useCases/ContextualPrioritization";
 import { EffectiveRemediation } from "./useCases/EffectiveRemediation";
 import { FullAttackSurface } from "./useCases/FullAttackSurface";
-import { Terms } from "./Terms";
 
 export function MainRouter() {
   const [location] = useLocation();
@@ -21,7 +22,7 @@ export function MainRouter() {
 
   const baseUrl =
     window.location.host.includes("github.io") ||
-      window.location.host.includes("localhost")
+    window.location.host.includes("localhost")
       ? "/codaintelligence-website/"
       : "/";
 
@@ -54,6 +55,9 @@ export function MainRouter() {
         </Route>
         <Route path={PAGES.terms}>
           <Terms />
+        </Route>
+        <Route path={PAGES.privacy}>
+          <Privacy />
         </Route>
         <Route>
           <Home />

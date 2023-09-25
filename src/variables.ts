@@ -10,4 +10,5 @@ export const PAGES = {
   fullAttackSurface: "fullAttackSurface",
   partnerEnablement: "partnerEnablement",
   terms: "terms",
+  privacy: "privacy",
 };

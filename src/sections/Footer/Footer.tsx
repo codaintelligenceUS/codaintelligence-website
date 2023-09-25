@@ -1,19 +1,18 @@
 import { Logo } from "@/atoms";
-import { PAGES } from "@/variables";
-import { Mail, Phone, Pin } from "lucide-react";
-import { Link } from "wouter";
-import styles from "./Footer.module.css";
-import { BookDemo } from "..";
-import { useState } from "react";
 import { Modal } from "@/atoms/Modal/Modal";
 import { RequestDemoForm } from "@/atoms/RequestDemoForm/RequestDemoForm";
+import { PAGES } from "@/variables";
+import { Mail, Phone, Pin } from "lucide-react";
+import { useState } from "react";
+import { Link } from "wouter";
+import { BookDemo } from "..";
+import styles from "./Footer.module.css";
 
 export function Footer() {
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
 
   return (
     <>
-      {" "}
       <BookDemo />
       <section className={styles.container}>
         <Logo />
@@ -22,6 +21,7 @@ export function Footer() {
           links={[
             { title: "Resources", href: PAGES.resources },
             { title: "About us", href: PAGES.company },
+            { title: "Privacy Policy", href: PAGES.privacy },
           ]}
         />
         <LinkGroup

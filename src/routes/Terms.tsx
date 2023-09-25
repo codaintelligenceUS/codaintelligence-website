@@ -1,20 +1,19 @@
 import { Footer, Header } from "@/sections";
 import { useTitle } from "@/utils/useTitle";
+import styles from "./privacyTerms.module.css";
 
-import CODATOS from "@/assets/CODA-TOS-v1.2.pdf";
+import CODAMAP from "@/assets/210825-CODA-MAP-Policy-V1.1.pdf";
 import CODADPA from "@/assets/CODA-DPA.pdf";
 import CODASLA from "@/assets/CODA-SLA.pdf";
 import CODASPAR from "@/assets/CODA-SPARA-v1.4.pdf";
-import CODAMAP from "@/assets/210825-CODA-MAP-Policy-V1.1.pdf";
+import CODATOS from "@/assets/CODA-TOS-v1.2.pdf";
 
 export function Terms() {
   useTitle("Terms");
   return (
     <>
       <Header isLeftAligned type="title" title="Terms of Service" />
-      <section
-        style={{ padding: "0 15vw 15vw 15vw", backgroundColor: "#570e2f" }}
-      >
+      <section className={styles.container}>
         <div
           style={{
             paddingBottom: "20px",
@@ -75,20 +74,18 @@ export function Terms() {
           1.2 Authorized User means a person who is authorized by Customer to
           access and use the Service.
           <br />
-          1.3
-          CustomerDatameansalldatamadeavailablebyCustomertoCODAforuseinconnection
-          with the Service.
+          1.3 Customer Data means all data made available by Customer to CODA
+          for use in connection with the Service.
           <br />
-          1.4
-          DocumentationmeansthedocumentationfortheServicegenerallysuppliedbyCODAto
-          assist its customers in their use of the Service, including user and
-          system administrator guides, manuals and the Service functionality
-          specifications.
+          1.4 Documentation menas the documentation for the Service generally
+          supplied by CODA to assist its customers in their use of the Service,
+          including user and system administrator guides, manuals and the
+          Service functionality specifications.
           <br />
-          1.5
-          HostingTermsandConditionsmeansthetermsandconditionsofthethirdpartyhosting
-          service provider used by CODA to host Customer Data, as set out in
-          Schedule B (Service Level Agreement for Services &amp; Software).
+          1.5 Hosting Terms and Conditions means the terms and conditions of the
+          third party hosting service provider used by CODA to host Customer
+          Data, as set out in Schedule B (Service Level Agreement for Services
+          &amp; Software).
           <br />
           1.6 Open Source Software means any open source, copyleft or community
           source code (including any libraries or code, software, technologies
@@ -103,7 +100,8 @@ export function Terms() {
           integral part of the Agreement and shall be substantially in the form
           set out in Schedule A (Template Order Form).
           <br />
-          1.8 ServicemeansthesubscriptionserviceidentifiedintheOrderForm.
+          1.8 Service means the subscription service identified in the Order
+          Form.
           <br />
           1.9 SLA (or Service Level Agreement) sets out CODA’s process for
           responding to customer support requests within predefined parameters
@@ -126,7 +124,7 @@ export function Terms() {
         <p>
           <strong>2. SOFTWARE</strong>
           <br />
-          2.1 AccesstoService.
+          2.1 Access to Service.
           <br />
           (a) During the Subscription Term, and subject to the terms and
           conditions of this Agreement (including the Hosting Terms and
@@ -259,14 +257,12 @@ export function Terms() {
         <p>
           <strong>3. FEES AND PAYMENT TERMS</strong>
           <br />
-          3.1
-          IfCustomerwishestobecomeaCODAauthorizedreseller,Customercandosobysigning
-          a separate dedicated reseller agreement.
+          3.1 If Customer wishes to become a CODA authorized reseller,Customer
+          ca ndo so by signing a separate dedicated reseller agreement.
           <br />
-          3.2
-          Fees.CODAwillinvoiceCustomer,andCustomershallpay,thefeessetforthintheOrder
-          Form (or such other fees as notified by CODA to Customer from time to
-          time in accordance with Section 3.13 below).
+          3.2 Fees. CODA will invoice Customer,and Customer shall pay, the fees
+          set forth in the Order Form (or such other fees as notified by CODA to
+          Customer from time to time in accordance with Section 3.13 below).
           <br />
           3.3 If usage of the Services exceeds the amounts or limits set out in
           an Order, CODA will invoice Customer, and Customer must pay, for such
@@ -282,15 +278,14 @@ export function Terms() {
           months of Service will increase to include the current amount plus the
           excess.
           <br />
-          3.4
-          UpgradesorExpansions.ForanyServiceupgradesorexpansionsduringtheSubscription
-          Term, Customer must pay the additional pro rata Service fee for the
-          upgrade or expansion through the end of the then-current Initial Term
-          or Renewal Term (as applicable). For the following Renewal Term, the
-          upgraded or expanded Service will be invoiced along with the
-          originally-ordered Service and treated in all respects as though it
-          had been part of the original Order Form. A new or amended Order Form
-          is required for each upgrade or expansion.
+          3.4 Upgrades or Expansions. For any Service upgrades or expansions
+          during the Subscription Term, Customer must pay the additional pro
+          rata Service fee for the upgrade or expansion through the end of the
+          then-current Initial Term or Renewal Term (as applicable). For the
+          following Renewal Term, the upgraded or expanded Service will be
+          invoiced along with the originally-ordered Service and treated in all
+          respects as though it had been part of the original Order Form. A new
+          or amended Order Form is required for each upgrade or expansion.
           <br />
           3.5 Taxes. All amounts payable by Customer to CODA hereunder are
           exclusive of any Taxes. Customer will be solely responsible for
@@ -584,20 +579,19 @@ export function Terms() {
         <p>
           <strong>9. INDEMNIFICATION</strong>
           <br />
-          9.1
-          ByCODA.CODAwillindemnify,defend,andholdharmlessCustomerfromandagainstall
-          liabilities, damages, and costs (including settlement costs and
-          reasonable attorneys&#8217; fees) arising out of a third party claim
-          that CODA’s technology used to provide the Service infringes or
-          misappropriates any U.S. patent, copyright, trade secret, or trademark
-          of such third party. Notwithstanding the foregoing, in no event shall
-          CODA have any obligations or liability under this Section arising
-          from: (i) use of any Service in a manner not anticipated by this
-          Agreement or in combination with materials not furnished by CODA; or
-          (ii) any content, information, or data provided by Customer or other
-          third parties. If the Service is or is likely to become subject to a
-          claim of infringement or misappropriation, then CODA will, at its sole
-          option and expense, either: (i) obtain for Customer the right to
+          9.1 By CODA. CODA will indemnify, defend, and hold harmless Customer
+          from and against all liabilities, damages, and costs (including
+          settlement costs and reasonable attorneys&#8217; fees) arising out of
+          a third party claim that CODA’s technology used to provide the Service
+          infringes or misappropriates any U.S. patent, copyright, trade secret,
+          or trademark of such third party. Notwithstanding the foregoing, in no
+          event shall CODA have any obligations or liability under this Section
+          arising from: (i) use of any Service in a manner not anticipated by
+          this Agreement or in combination with materials not furnished by CODA;
+          or (ii) any content, information, or data provided by Customer or
+          other third parties. If the Service is or is likely to become subject
+          to a claim of infringement or misappropriation, then CODA will, at its
+          sole option and expense, either: (i) obtain for Customer the right to
           continue using the Service; (ii) replace or modify the Service to be
           non-infringing and substantially equivalent to the infringing Service;
           or (iii) if options (i) and (ii) above cannot be accomplished despite

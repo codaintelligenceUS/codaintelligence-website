@@ -3,10 +3,10 @@ import { useTitle } from "@/utils/useTitle";
 import styles from "./privacyTerms.module.css";
 
 export function Privacy() {
-  useTitle("Privacy Statement");
+  useTitle("Privacy Policy");
   return (
     <>
-      <Header isLeftAligned type="title" title="Privacy Statement" />
+      <Header isLeftAligned type="title" title="Privacy Policy" />
       <section className={styles.container}>
         <p>Updated at 2023-09-25</p>
         <p>

@@ -1,49 +1,48 @@
 import { Card } from "@/atoms/Card/Card";
-import styles from "./Integrations.module.css";
 import { Title } from "@/atoms/Title/Title";
+import styles from "./Integrations.module.css";
 
-import Acronis from "./assets/Acronis.png";
 import AVAST from "./assets/AVAST.svg";
 import AVG from "./assets/AVG.png";
+import AWS from "./assets/AWS.png";
+import Acronis from "./assets/Acronis.png";
+import ActiveDirectory from "./assets/Active Directory.svg";
+import Autotask from "./assets/Autotask.png";
+import Azure from "./assets/Azure AD.png";
 import BeyondTrust from "./assets/BeyondTrust.png";
 import Bitdefender from "./assets/Bitdefender.png";
 import Checkpoint from "./assets/Checkpoint.png";
+import Cisco from "./assets/Cisco.png";
+import ConnectWise from "./assets/ConnectWise PSA.png";
 import CrowdStrike from "./assets/CrowdStrike.png";
 import Cylance from "./assets/Cylance.png";
-import ESET from "./assets/ESET.png";
-import Fortinet from "./assets/Fortinet.png";
-import Huntress from "./assets/Huntress.png";
-import Infocyte from "./assets/Infocyte.png";
-import Malwarebytes from "./assets/Malwarebytes.png";
-import Mcafee from "./assets/Mcafee.webp";
-import Norton from "./assets/Norton.png";
-import Microsoft from "./assets/Microsoft.png";
-import Sophos from "./assets/Infocyte.png";
-import Symantec from "./assets/Symantec.png";
-import Trend from "./assets/Trend Micro.png";
-import Cisco from "./assets/Cisco.png";
-import VMWare from "./assets/Norton.png";
-import Webroot from "./assets/Webroot.svg";
-import ZoneAlarm from "./assets/ZoneAlarm.png";
 import D3 from "./assets/D3 Security.png";
-import Swimlane from "./assets/Swimlane.svg";
-import IBM from "./assets/IBM Qradar.png";
-import Microsoft365 from "./assets/Microsoft 365.webp";
-import Splunk from "./assets/Splunk.png";
+import ESET from "./assets/ESET.png";
 import FortiSIEM from "./assets/FortiSIEM.png";
-import MicrosoftAzure from "./assets/Microsoft Azure.webp";
-import Azure from "./assets/Azure AD.png";
-import ActiveDirectory from "./assets/Active Directory.svg";
-import MicrosoftSentinel from "./assets/Microsoft Sentinel.png";
-import AWS from "./assets/AWS.png";
+import Fortinet from "./assets/Fortinet.png";
 import GCP from "./assets/GCP.png";
+import Huntress from "./assets/Huntress.png";
+import IBM from "./assets/IBM Qradar.png";
+import { default as Infocyte, default as Sophos } from "./assets/Infocyte.png";
+import JIRA from "./assets/JIRA.jpg";
+import Kaseya from "./assets/Kaseya BMS.png";
+import Malwarebytes from "./assets/Malwarebytes.png";
+import Manage from "./assets/Manage Engine.png";
+import Mcafee from "./assets/Mcafee.webp";
+import Microsoft365 from "./assets/Microsoft 365.webp";
+import MicrosoftAzure from "./assets/Microsoft Azure.webp";
+import MicrosoftSentinel from "./assets/Microsoft Sentinel.png";
+import Microsoft from "./assets/Microsoft.png";
+import Norton from "./assets/Norton.png";
 import Oracle from "./assets/Oracle Cloud.png";
 import SAP from "./assets/SAP ECS Cloud.png";
-import Autotask from "./assets/Autotask.png";
-import JIRA from "./assets/JIRA.jpg";
-import ConnectWise from "./assets/ConnectWise PSA.png";
-import Kaseya from "./assets/Kaseya BMS.png";
-import Manage from "./assets/Manage Engine.png";
+import Splunk from "./assets/Splunk.png";
+import Swimlane from "./assets/Swimlane.svg";
+import Symantec from "./assets/Symantec.png";
+import Trend from "./assets/Trend Micro.png";
+import VMWare from "./assets/VMWare.png";
+import Webroot from "./assets/Webroot.svg";
+import ZoneAlarm from "./assets/ZoneAlarm.png";
 
 export function Integrations() {
   const partners = [
@@ -91,7 +90,7 @@ export function Integrations() {
     { icon: Symantec, name: "Symantec", type: "Endpoint Security Validation " },
     { icon: Trend, name: "Trend Micro", type: "Endpoint Security Validation " },
     { icon: Cisco, name: "Cisco", type: "Endpoint Security Validation " },
-    { icon: VMWare, name: "Norton", type: "Endpoint Security Validation " },
+    { icon: VMWare, name: "VMWare", type: "Endpoint Security Validation " },
     { icon: Webroot, name: "Webroot", type: "Endpoint Security Validation " },
     {
       icon: ZoneAlarm,

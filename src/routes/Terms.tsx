@@ -77,7 +77,7 @@ export function Terms() {
           1.3 Customer Data means all data made available by Customer to CODA
           for use in connection with the Service.
           <br />
-          1.4 Documentation menas the documentation for the Service generally
+          1.4 Documentation means the documentation for the Service generally
           supplied by CODA to assist its customers in their use of the Service,
           including user and system administrator guides, manuals and the
           Service functionality specifications.
@@ -136,7 +136,7 @@ export function Terms() {
           Customer’s own name and branding.
           <br />
           (b) Customer may grant Authorized Users a non-exclusive,
-          non-transferable, non- sublicensable right to access and use the
+          non-transferable, non-sublicensable right to access and use the
           Service: (i) solely for the Authorized Users’ business purposes; (ii)
           within the Volume Limitations; (iii) as described in the Agreement;
           and provided that Customer:
@@ -356,8 +356,8 @@ export function Terms() {
           breach hereunder and shall cooperate with any reasonable request of
           the disclosing Party in enforcing its rights.
           <br />
-          4.2
-          Exclusions.InformationwillnotbedeemedConfidentialInformationifsuchinformation:
+          4.2 Exclusions. Information will not be deemed Confidential
+          Information if such information:
           (i) is known prior to receipt from the Disclosing Party, without any
           obligation of confidentiality; (ii) becomes known to the receiving
           Party directly or indirectly from a source other than one having an
@@ -505,8 +505,8 @@ export function Terms() {
           restore access to the Service until Customer has paid all fees owed to
           CODA.
           <br />
-          7.3
-          Termination.Notwithstandingtheforegoing,eitherPartymayterminatetheAgreement:
+          7.3 Termination. Not with standing the foregoing, either Party may
+          terminate the Agreement:
           (i) immediately in the event of a material breach of the Agreement by
           the other Party that is not cured within thirty days of written notice
           thereof from the other Party or, if such breach is incapable of cure,
@@ -552,12 +552,12 @@ export function Terms() {
           to test, improve and alter the functionality, development and delivery
           of the Service.
           <br />
-          8.2 CODAService.AsbetweenCODAandCustomer,CODA retains ownership of all
-          right, title, and interest in and to all intellectual property in and
-          about the Service and the Documentation. CODA shall notify Customer of
-          any Open Source Software incorporated in the Service, or otherwise
-          used by CODA in its provision of the Service, at Customer’s written
-          request.
+          8.2 CODA Service. As between CODA and Customer, CODA retains ownership
+          of all right, title, and interest in and to all intellectual property
+          in and about the Service and the Documentation. CODA shall notify
+          Customer of any Open Source Software incorporated in the Service, or
+          otherwise used by CODA in its provision of the Service, at Customer’s
+          written request.
           <br />
           8.3 Customer Obligations. Customer shall not (and shall ensure that
           Authorized Users do not): (i) upload or otherwise transmit, display,

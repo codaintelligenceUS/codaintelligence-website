@@ -22,7 +22,7 @@ export function MainRouter() {
 
   const baseUrl =
     window.location.host.includes("github.io") ||
-    window.location.host.includes("localhost")
+      window.location.host.includes("localhost")
       ? "/codaintelligence-website/"
       : "/";
 
@@ -31,6 +31,12 @@ export function MainRouter() {
       <Switch>
         <Route path={PAGES.company}>
           <Company />
+        </Route>
+        <Route path={PAGES.contact}>
+          <Company />
+        </Route>
+        <Route path={PAGES.subprocessors}>
+          <TechPartners />
         </Route>
         <Route path={PAGES.technologyPartners}>
           <TechPartners />

@@ -8,12 +8,13 @@ export function Privacy() {
     <>
       <Header isLeftAligned type="title" title="Privacy Policy" />
       <section className={styles.container}>
-        <p>Updated at 2023-09-25</p>
+        <p>Updated at 2026-04-07</p>
         <p>
           CODA Intelligence (“we,” “our,” or “us”) is committed to protecting
           your privacy. This Privacy Policy explains how your personal
           information is collected, used, and disclosed by CODA Intelligence.
         </p>
+        <p>No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties</p>
         <p>
           This Privacy Policy applies to our website, and its associated
           subdomains (collectively, our “Service”) alongside our application,
